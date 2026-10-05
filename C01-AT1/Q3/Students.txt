@@ -1,0 +1,27 @@
+Student 1
+Register Number: 192472074
+Email: gayathri@saveetha.com
+Course Code: DSA03
+Semester: 5
+Mobile: 9876543210
+
+Student 2
+Register Number: 192472075
+Email: priya@saveetha.com
+Course Code: NLP04
+Semester: 6
+Mobile: 8765432109
+
+Student 3
+Register Number: 192472076
+Email: arjun@gmail.com
+Course Code: DSA03
+Semester: 5
+Mobile: 9123456780
+
+Student 4
+Register Number: 19247207
+Email: sneha@saveetha.com
+Course Code: DSA123
+Semester: 9
+Mobile: 5123456789

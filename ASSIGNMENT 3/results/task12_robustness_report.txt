@@ -1,0 +1,152 @@
+DSA03 NLP ASSIGNMENT - TASK 12
+ROBUSTNESS TO CONVERSATIONAL AND ADVERSARIAL INPUT
+
+Total messages: 34
+Original accepted: 1
+Original coverage: 2.94%
+Adapted accepted: 5
+Adapted coverage: 14.71%
+
+MESSAGE RESULTS
+===============
+
+1. I need the timetable
+   Original: REJECT
+   Adapted : ACCEPT
+
+2. I need the exam schedule
+   Original: REJECT
+   Adapted : REJECT
+
+3. can you show the result
+   Original: REJECT
+   Adapted : ACCEPT
+
+4. where is the assignment
+   Original: REJECT
+   Adapted : REJECT
+
+5. how can I get the certificate
+   Original: REJECT
+   Adapted : ACCEPT
+
+6. can you tell me the exam date
+   Original: REJECT
+   Adapted : REJECT
+
+7. where can I get the timetable
+   Original: REJECT
+   Adapted : ACCEPT
+
+8. please show my result
+   Original: REJECT
+   Adapted : REJECT
+
+9. exam timetable please
+   Original: REJECT
+   Adapted : REJECT
+
+10. hostel room needed
+   Original: REJECT
+   Adapted : REJECT
+
+11. need assignment deadline
+   Original: REJECT
+   Adapted : REJECT
+
+12. result please
+   Original: REJECT
+   Adapted : REJECT
+
+13. certificate needed
+   Original: REJECT
+   Adapted : REJECT
+
+14. I need the timetable and the exam schedule
+   Original: REJECT
+   Adapted : REJECT
+
+15. I need the result and the certificate
+   Original: REJECT
+   Adapted : REJECT
+
+16. can you show the timetable or the schedule
+   Original: REJECT
+   Adapted : REJECT
+
+17. I want to know when the exam starts
+   Original: REJECT
+   Adapted : REJECT
+
+18. can you tell me where the department is
+   Original: REJECT
+   Adapted : REJECT
+
+19. I need to know whether the result is available
+   Original: REJECT
+   Adapted : REJECT
+
+20. I need the certificate that the department provides
+   Original: REJECT
+   Adapted : REJECT
+
+21. show the timetable which the department published
+   Original: REJECT
+   Adapted : REJECT
+
+22. I need the timetable for the exam
+   Original: REJECT
+   Adapted : REJECT
+
+23. I need the document for the course
+   Original: REJECT
+   Adapted : REJECT
+
+24. student needs timetable
+   Original: REJECT
+   Adapted : REJECT
+
+25. student checks result
+   Original: REJECT
+   Adapted : REJECT
+
+26. the student need the timetable
+   Original: ACCEPT
+   Adapted : ACCEPT
+
+27. the timetable student need
+   Original: REJECT
+   Adapted : REJECT
+
+28. need the the timetable
+   Original: REJECT
+   Adapted : REJECT
+
+29. where timetable exam
+   Original: REJECT
+   Adapted : REJECT
+
+30. can you the result show
+   Original: REJECT
+   Adapted : REJECT
+
+31. I am a student and I need the timetable for the exam
+   Original: REJECT
+   Adapted : REJECT
+
+32. I need the result and I also want the certificate
+   Original: REJECT
+   Adapted : REJECT
+
+33. can you tell me where I can download the assignment
+   Original: REJECT
+   Adapted : REJECT
+
+34. I want the timetable that the department published
+   Original: REJECT
+   Adapted : REJECT
+
+CONCLUSION
+==========
+
+The original CFG does not adequately cover conversational university-helpdesk queries. The adapted grammar provides broader coverage by supporting questions, coordination, embedded clauses, relative clauses and conversational forms. For a practical system, Earley parsing with feature structures and probabilistic ranking is recommended.

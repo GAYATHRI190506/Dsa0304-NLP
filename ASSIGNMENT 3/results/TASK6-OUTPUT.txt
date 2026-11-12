@@ -1,0 +1,422 @@
+======================================================================
+TASK 6 - TOP-DOWN PARSING
+======================================================================
+
+======================================================================
+EXAMPLE 1: UNAMBIGUOUS SENTENCE
+======================================================================
+Sentence: the student checks
+Result: ACCEPTED
+
+Parse Tree:
+S
+  NP
+    Det
+      the
+    N
+      student
+  VP
+    V
+      checks
+
+Parsing steps: 127
+Backtracks: 26
+Left recursion detected: True
+Runtime: 0.000242 seconds
+
+STACK / AGENDA TRACE
+----------------------------------------------------------------------
+001. STACK: [S] POSITION: 0
+002. EXPAND: S -> NP VP
+003.   STACK: [NP] POSITION: 0
+004.   EXPAND: NP -> Det N
+005.     STACK: [Det] POSITION: 0
+006.     EXPAND: Det -> the
+007.       STACK: [the] POSITION: 0
+008.       MATCH: 'the'
+009.     STACK: [N] POSITION: 1
+010.     EXPAND: N -> student
+011.       STACK: [student] POSITION: 1
+012.       MATCH: 'student'
+013.     EXPAND: N -> timetable
+014.       STACK: [timetable] POSITION: 1
+015.       FAIL: expected 'timetable'
+016.     BACKTRACK: N -> timetable
+017.     EXPAND: N -> exam
+018.       STACK: [exam] POSITION: 1
+019.       FAIL: expected 'exam'
+020.     BACKTRACK: N -> exam
+021.     EXPAND: N -> library
+022.       STACK: [library] POSITION: 1
+023.       FAIL: expected 'library'
+024.     BACKTRACK: N -> library
+025.   EXPAND: NP -> Det N PP
+026.     STACK: [Det] POSITION: 0
+027.     EXPAND: Det -> the
+028.       STACK: [the] POSITION: 0
+029.       MATCH: 'the'
+030.     STACK: [N] POSITION: 1
+031.     EXPAND: N -> student
+032.       STACK: [student] POSITION: 1
+033.       MATCH: 'student'
+034.     EXPAND: N -> timetable
+035.       STACK: [timetable] POSITION: 1
+036.       FAIL: expected 'timetable'
+037.     BACKTRACK: N -> timetable
+038.     EXPAND: N -> exam
+039.       STACK: [exam] POSITION: 1
+040.       FAIL: expected 'exam'
+041.     BACKTRACK: N -> exam
+042.     EXPAND: N -> library
+043.       STACK: [library] POSITION: 1
+044.       FAIL: expected 'library'
+045.     BACKTRACK: N -> library
+046.     STACK: [PP] POSITION: 2
+047.     EXPAND: PP -> P NP
+048.       STACK: [P] POSITION: 2
+049.       EXPAND: P -> for
+050.         STACK: [for] POSITION: 2
+051.         FAIL: expected 'for'
+052.       BACKTRACK: P -> for
+053.       EXPAND: P -> in
+054.         STACK: [in] POSITION: 2
+055.         FAIL: expected 'in'
+056.       BACKTRACK: P -> in
+057.     BACKTRACK: PP -> P NP
+058.   BACKTRACK: NP -> Det N PP
+059.   EXPAND: NP -> NP PP
+060.     LEFT RECURSION BLOCKED: NP at position 0
+061.   BACKTRACK: NP -> NP PP
+062.   STACK: [VP] POSITION: 2
+063.   EXPAND: VP -> V
+064.     STACK: [V] POSITION: 2
+065.     EXPAND: V -> checks
+066.       STACK: [checks] POSITION: 2
+067.       MATCH: 'checks'
+068.     EXPAND: V -> needs
+069.       STACK: [needs] POSITION: 2
+070.       FAIL: expected 'needs'
+071.     BACKTRACK: V -> needs
+072.   EXPAND: VP -> V NP
+073.     STACK: [V] POSITION: 2
+074.     EXPAND: V -> checks
+075.       STACK: [checks] POSITION: 2
+076.       MATCH: 'checks'
+077.     EXPAND: V -> needs
+078.       STACK: [needs] POSITION: 2
+079.       FAIL: expected 'needs'
+080.     BACKTRACK: V -> needs
+081.     STACK: [NP] POSITION: 3
+082.     EXPAND: NP -> Det N
+083.       STACK: [Det] POSITION: 3
+084.       EXPAND: Det -> the
+085.         STACK: [the] POSITION: 3
+086.         FAIL: expected 'the'
+087.       BACKTRACK: Det -> the
+088.     BACKTRACK: NP -> Det N
+089.     EXPAND: NP -> Det N PP
+090.       STACK: [Det] POSITION: 3
+091.       EXPAND: Det -> the
+092.         STACK: [the] POSITION: 3
+093.         FAIL: expected 'the'
+094.       BACKTRACK: Det -> the
+095.     BACKTRACK: NP -> Det N PP
+096.     EXPAND: NP -> NP PP
+097.       LEFT RECURSION BLOCKED: NP at position 3
+098.     BACKTRACK: NP -> NP PP
+099.   BACKTRACK: VP -> V NP
+100.   EXPAND: VP -> V NP PP
+... 27 more steps
+
+======================================================================
+EXAMPLE 2: AMBIGUOUS SENTENCE
+======================================================================
+Sentence: the student checks the timetable for the exam
+
+Possible PP attachments:
+1. VP attachment:
+   [the student] [checks the timetable] [for the exam]
+
+2. NP attachment:
+   [the student] [checks [the timetable for the exam]]
+
+Result: ACCEPTED
+
+First successful parse:
+S
+  NP
+    Det
+      the
+    N
+      student
+  VP
+    V
+      checks
+    NP
+      Det
+        the
+      N
+        timetable
+      PP
+        P
+          for
+        NP
+          Det
+            the
+          N
+            exam
+
+Parsing steps: 400
+Backtracks: 67
+Left recursion detected: True
+Runtime: 0.000930 seconds
+
+STACK / AGENDA TRACE
+----------------------------------------------------------------------
+001. STACK: [S] POSITION: 0
+002. EXPAND: S -> NP VP
+003.   STACK: [NP] POSITION: 0
+004.   EXPAND: NP -> Det N
+005.     STACK: [Det] POSITION: 0
+006.     EXPAND: Det -> the
+007.       STACK: [the] POSITION: 0
+008.       MATCH: 'the'
+009.     STACK: [N] POSITION: 1
+010.     EXPAND: N -> student
+011.       STACK: [student] POSITION: 1
+012.       MATCH: 'student'
+013.     EXPAND: N -> timetable
+014.       STACK: [timetable] POSITION: 1
+015.       FAIL: expected 'timetable'
+016.     BACKTRACK: N -> timetable
+017.     EXPAND: N -> exam
+018.       STACK: [exam] POSITION: 1
+019.       FAIL: expected 'exam'
+020.     BACKTRACK: N -> exam
+021.     EXPAND: N -> library
+022.       STACK: [library] POSITION: 1
+023.       FAIL: expected 'library'
+024.     BACKTRACK: N -> library
+025.   EXPAND: NP -> Det N PP
+026.     STACK: [Det] POSITION: 0
+027.     EXPAND: Det -> the
+028.       STACK: [the] POSITION: 0
+029.       MATCH: 'the'
+030.     STACK: [N] POSITION: 1
+031.     EXPAND: N -> student
+032.       STACK: [student] POSITION: 1
+033.       MATCH: 'student'
+034.     EXPAND: N -> timetable
+035.       STACK: [timetable] POSITION: 1
+036.       FAIL: expected 'timetable'
+037.     BACKTRACK: N -> timetable
+038.     EXPAND: N -> exam
+039.       STACK: [exam] POSITION: 1
+040.       FAIL: expected 'exam'
+041.     BACKTRACK: N -> exam
+042.     EXPAND: N -> library
+043.       STACK: [library] POSITION: 1
+044.       FAIL: expected 'library'
+045.     BACKTRACK: N -> library
+046.     STACK: [PP] POSITION: 2
+047.     EXPAND: PP -> P NP
+048.       STACK: [P] POSITION: 2
+049.       EXPAND: P -> for
+050.         STACK: [for] POSITION: 2
+051.         FAIL: expected 'for'
+052.       BACKTRACK: P -> for
+053.       EXPAND: P -> in
+054.         STACK: [in] POSITION: 2
+055.         FAIL: expected 'in'
+056.       BACKTRACK: P -> in
+057.     BACKTRACK: PP -> P NP
+058.   BACKTRACK: NP -> Det N PP
+059.   EXPAND: NP -> NP PP
+060.     LEFT RECURSION BLOCKED: NP at position 0
+061.   BACKTRACK: NP -> NP PP
+062.   STACK: [VP] POSITION: 2
+063.   EXPAND: VP -> V
+064.     STACK: [V] POSITION: 2
+065.     EXPAND: V -> checks
+066.       STACK: [checks] POSITION: 2
+067.       MATCH: 'checks'
+068.     EXPAND: V -> needs
+069.       STACK: [needs] POSITION: 2
+070.       FAIL: expected 'needs'
+071.     BACKTRACK: V -> needs
+072.   EXPAND: VP -> V NP
+073.     STACK: [V] POSITION: 2
+074.     EXPAND: V -> checks
+075.       STACK: [checks] POSITION: 2
+076.       MATCH: 'checks'
+077.     EXPAND: V -> needs
+078.       STACK: [needs] POSITION: 2
+079.       FAIL: expected 'needs'
+080.     BACKTRACK: V -> needs
+081.     STACK: [NP] POSITION: 3
+082.     EXPAND: NP -> Det N
+083.       STACK: [Det] POSITION: 3
+084.       EXPAND: Det -> the
+085.         STACK: [the] POSITION: 3
+086.         MATCH: 'the'
+087.       STACK: [N] POSITION: 4
+088.       EXPAND: N -> student
+089.         STACK: [student] POSITION: 4
+090.         FAIL: expected 'student'
+091.       BACKTRACK: N -> student
+092.       EXPAND: N -> timetable
+093.         STACK: [timetable] POSITION: 4
+094.         MATCH: 'timetable'
+095.       EXPAND: N -> exam
+096.         STACK: [exam] POSITION: 4
+097.         FAIL: expected 'exam'
+098.       BACKTRACK: N -> exam
+099.       EXPAND: N -> library
+100.         STACK: [library] POSITION: 4
+... 300 more steps
+
+======================================================================
+LEFT RECURSION
+======================================================================
+
+Original rule:
+
+    NP -> NP PP
+
+This is left-recursive because NP immediately
+calls itself before consuming input.
+
+Expansion can become:
+
+    NP -> NP PP
+       -> NP PP PP
+       -> NP PP PP PP
+       -> ...
+
+A naive recursive-descent parser may repeatedly
+expand NP without consuming a word.
+
+Therefore left recursion can cause infinite recursion.
+
+
+======================================================================
+LEFT-RECURSION ELIMINATION
+======================================================================
+
+Original:
+
+    NP -> NP PP
+    NP -> Det N
+
+After elimination:
+
+    NP -> Det N NP_EXT
+    NP_EXT -> PP NP_EXT
+    NP_EXT -> epsilon
+
+This grammar first consumes the basic noun phrase
+and then optionally consumes one or more PPs.
+
+Examples:
+
+    the timetable
+
+    the timetable for the exam
+
+    the timetable for the exam in the library
+
+
+======================================================================
+REDUNDANT PARSING WITH MULTIPLE PPs
+======================================================================
+A simplified binary attachment model is used:
+each PP can be attached to an NP or VP.
+
+Number of PPs       Possible patterns   
+----------------------------------------
+1                   2                   
+2                   4                   
+3                   8                   
+4                   16                  
+5                   32                  
+6                   64                  
+
+The number of possible attachment patterns grows
+exponentially in this simplified model.
+
+A naive top-down parser may repeatedly explore
+similar sub-problems.
+
+Chart parsing methods such as Earley reduce
+this repeated work by storing parser states.
+
+
+======================================================================
+WORST-CASE COMPLEXITY
+======================================================================
+
+Recursive-descent parsing is efficient for simple,
+nearly deterministic grammars.
+
+Approximate best-case behavior:
+    O(n)
+
+With many grammar alternatives and ambiguity,
+backtracking can become exponential.
+
+A simplified search model is:
+
+    O(b^d)
+
+where:
+
+    b = average number of alternatives
+    d = search depth
+
+Earley parsing provides a cubic worst-case bound
+for general CFG parsing:
+
+    O(n^3)
+
+Therefore chart-based parsing is more suitable
+for highly ambiguous CFGs.
+
+
+======================================================================
+EXAMPLE 3: UNGRAMMATICAL SENTENCE
+======================================================================
+Sentence: student checks
+Result: REJECTED
+
+Parsing steps: 21
+Backtracks: 6
+Left recursion detected: True
+Runtime: 0.000099 seconds
+
+STACK / AGENDA TRACE
+----------------------------------------------------------------------
+001. STACK: [S] POSITION: 0
+002. EXPAND: S -> NP VP
+003.   STACK: [NP] POSITION: 0
+004.   EXPAND: NP -> Det N
+005.     STACK: [Det] POSITION: 0
+006.     EXPAND: Det -> the
+007.       STACK: [the] POSITION: 0
+008.       FAIL: expected 'the'
+009.     BACKTRACK: Det -> the
+010.   BACKTRACK: NP -> Det N
+011.   EXPAND: NP -> Det N PP
+012.     STACK: [Det] POSITION: 0
+013.     EXPAND: Det -> the
+014.       STACK: [the] POSITION: 0
+015.       FAIL: expected 'the'
+016.     BACKTRACK: Det -> the
+017.   BACKTRACK: NP -> Det N PP
+018.   EXPAND: NP -> NP PP
+019.     LEFT RECURSION BLOCKED: NP at position 0
+020.   BACKTRACK: NP -> NP PP
+021. BACKTRACK: S -> NP VP
+
+======================================================================
+TASK 6 IMPLEMENTATION COMPLETED
+======================================================================

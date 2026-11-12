@@ -1,0 +1,407 @@
+======================================================================
+TASK 7 - EARLEY PARSING
+======================================================================
+
+======================================================================
+HAND SIMULATION OF EARLEY PARSING
+======================================================================
+Sentence: the student checks the timetable
+
+Tokens:
+  0: the
+  1: student
+  2: checks
+  3: the
+  4: timetable
+
+Initial state:
+
+    S[0]:
+    γ -> • S, origin=0
+
+Predictor expands S:
+
+    γ -> • S
+    S  -> • NP VP
+
+Predictor then expands NP:
+
+    NP -> • Det N
+    NP -> • Det N PP
+    NP -> • NP PP
+
+Scanner consumes:
+
+    the
+    student
+    checks
+    the
+    timetable
+
+Completer advances states whenever
+a constituent is completed.
+
+The final chart contains:
+
+    γ -> S •, origin=0
+
+which means the sentence is accepted.
+
+
+======================================================================
+EXAMPLE 1: BASIC EARLEY PARSING
+======================================================================
+Sentence: the student checks the timetable
+Result: ACCEPTED
+
+Number of chart states:
+54
+Predicted states: 28
+Scanned states: 5
+Completed states: 13
+Runtime: 0.000233 seconds
+
+======================================================================
+EARLEY CHART
+======================================================================
+
+S[0]
+------------------------------------------------------------
+  01. γ -> • S, origin=0
+  02. S -> • NP VP, origin=0
+  03. NP -> • Det N, origin=0
+  04. NP -> • Det N PP, origin=0
+  05. NP -> • NP PP, origin=0
+  06. Det -> • the, origin=0
+
+S[1]
+------------------------------------------------------------
+  01. Det -> the •, origin=0
+  02. NP -> Det • N, origin=0
+  03. NP -> Det • N PP, origin=0
+  04. N -> • student, origin=1
+  05. N -> • timetable, origin=1
+  06. N -> • exam, origin=1
+  07. N -> • library, origin=1
+
+S[2]
+------------------------------------------------------------
+  01. N -> student •, origin=1
+  02. NP -> Det N •, origin=0
+  03. NP -> Det N • PP, origin=0
+  04. S -> NP • VP, origin=0
+  05. NP -> NP • PP, origin=0
+  06. PP -> • P NP, origin=2
+  07. VP -> • V, origin=2
+  08. VP -> • V NP, origin=2
+  09. VP -> • V NP PP, origin=2
+  10. P -> • for, origin=2
+  11. P -> • in, origin=2
+  12. V -> • checks, origin=2
+  13. V -> • needs, origin=2
+
+S[3]
+------------------------------------------------------------
+  01. V -> checks •, origin=2
+  02. VP -> V •, origin=2
+  03. VP -> V • NP, origin=2
+  04. VP -> V • NP PP, origin=2
+  05. S -> NP VP •, origin=0
+  06. NP -> • Det N, origin=3
+  07. NP -> • Det N PP, origin=3
+  08. NP -> • NP PP, origin=3
+  09. γ -> S •, origin=0
+  10. Det -> • the, origin=3
+
+S[4]
+------------------------------------------------------------
+  01. Det -> the •, origin=3
+  02. NP -> Det • N, origin=3
+  03. NP -> Det • N PP, origin=3
+  04. N -> • student, origin=4
+  05. N -> • timetable, origin=4
+  06. N -> • exam, origin=4
+  07. N -> • library, origin=4
+
+S[5]
+------------------------------------------------------------
+  01. N -> timetable •, origin=4
+  02. NP -> Det N •, origin=3
+  03. NP -> Det N • PP, origin=3
+  04. VP -> V NP •, origin=2
+  05. VP -> V NP • PP, origin=2
+  06. NP -> NP • PP, origin=3
+  07. PP -> • P NP, origin=5
+  08. S -> NP VP •, origin=0
+  09. P -> • for, origin=5
+  10. P -> • in, origin=5
+  11. γ -> S •, origin=0
+
+======================================================================
+EARLEY OPERATIONS
+======================================================================
+001. PREDICTOR at S[0]: expand S
+002. PREDICTOR at S[0]: expand NP
+003. PREDICTOR at S[0]: expand Det
+004. PREDICTOR at S[0]: expand Det
+005. PREDICTOR at S[0]: expand NP
+006. SCANNER: 'the' from S[0] to S[1]
+007. COMPLETER at S[1]: Det completed
+008. PREDICTOR at S[1]: expand N
+009. PREDICTOR at S[1]: expand N
+010. SCANNER: 'student' from S[1] to S[2]
+011. COMPLETER at S[2]: N completed
+012. COMPLETER at S[2]: NP completed
+013. PREDICTOR at S[2]: expand PP
+014. PREDICTOR at S[2]: expand VP
+015. PREDICTOR at S[2]: expand PP
+016. PREDICTOR at S[2]: expand P
+017. PREDICTOR at S[2]: expand V
+018. PREDICTOR at S[2]: expand V
+019. PREDICTOR at S[2]: expand V
+020. SCANNER: 'checks' from S[2] to S[3]
+021. COMPLETER at S[3]: V completed
+022. COMPLETER at S[3]: VP completed
+023. PREDICTOR at S[3]: expand NP
+024. PREDICTOR at S[3]: expand NP
+025. COMPLETER at S[3]: S completed
+026. PREDICTOR at S[3]: expand Det
+027. PREDICTOR at S[3]: expand Det
+028. PREDICTOR at S[3]: expand NP
+029. COMPLETER at S[3]: γ completed
+030. SCANNER: 'the' from S[3] to S[4]
+031. COMPLETER at S[4]: Det completed
+032. PREDICTOR at S[4]: expand N
+033. PREDICTOR at S[4]: expand N
+034. SCANNER: 'timetable' from S[4] to S[5]
+035. COMPLETER at S[5]: N completed
+036. COMPLETER at S[5]: NP completed
+037. PREDICTOR at S[5]: expand PP
+038. COMPLETER at S[5]: VP completed
+039. PREDICTOR at S[5]: expand PP
+040. PREDICTOR at S[5]: expand PP
+041. PREDICTOR at S[5]: expand P
+042. COMPLETER at S[5]: S completed
+043. COMPLETER at S[5]: γ completed
+
+======================================================================
+EXAMPLE 2: AMBIGUOUS SENTENCE
+======================================================================
+Sentence: the student checks the timetable for the exam
+
+Potential ambiguity:
+
+    VP attachment:
+        checks [the timetable] [for the exam]
+
+    NP attachment:
+        checks [the timetable for the exam]
+
+Earley parsing can keep multiple compatible
+states in the chart instead of committing
+immediately to one parse.
+
+Result: ACCEPTED
+Total chart states: 83
+Predicted states: 39
+Scanned states: 8
+Completed states: 24
+Runtime: 0.000359 seconds
+
+======================================================================
+EARLEY CHART
+======================================================================
+
+S[0]
+------------------------------------------------------------
+  01. γ -> • S, origin=0
+  02. S -> • NP VP, origin=0
+  03. NP -> • Det N, origin=0
+  04. NP -> • Det N PP, origin=0
+  05. NP -> • NP PP, origin=0
+  06. Det -> • the, origin=0
+
+S[1]
+------------------------------------------------------------
+  01. Det -> the •, origin=0
+  02. NP -> Det • N, origin=0
+  03. NP -> Det • N PP, origin=0
+  04. N -> • student, origin=1
+  05. N -> • timetable, origin=1
+  06. N -> • exam, origin=1
+  07. N -> • library, origin=1
+
+S[2]
+------------------------------------------------------------
+  01. N -> student •, origin=1
+  02. NP -> Det N •, origin=0
+  03. NP -> Det N • PP, origin=0
+  04. S -> NP • VP, origin=0
+  05. NP -> NP • PP, origin=0
+  06. PP -> • P NP, origin=2
+  07. VP -> • V, origin=2
+  08. VP -> • V NP, origin=2
+  09. VP -> • V NP PP, origin=2
+  10. P -> • for, origin=2
+  11. P -> • in, origin=2
+  12. V -> • checks, origin=2
+  13. V -> • needs, origin=2
+
+S[3]
+------------------------------------------------------------
+  01. V -> checks •, origin=2
+  02. VP -> V •, origin=2
+  03. VP -> V • NP, origin=2
+  04. VP -> V • NP PP, origin=2
+  05. S -> NP VP •, origin=0
+  06. NP -> • Det N, origin=3
+  07. NP -> • Det N PP, origin=3
+  08. NP -> • NP PP, origin=3
+  09. γ -> S •, origin=0
+  10. Det -> • the, origin=3
+
+S[4]
+------------------------------------------------------------
+  01. Det -> the •, origin=3
+  02. NP -> Det • N, origin=3
+  03. NP -> Det • N PP, origin=3
+  04. N -> • student, origin=4
+  05. N -> • timetable, origin=4
+  06. N -> • exam, origin=4
+  07. N -> • library, origin=4
+
+S[5]
+------------------------------------------------------------
+  01. N -> timetable •, origin=4
+  02. NP -> Det N •, origin=3
+  03. NP -> Det N • PP, origin=3
+  04. VP -> V NP •, origin=2
+  05. VP -> V NP • PP, origin=2
+  06. NP -> NP • PP, origin=3
+  07. PP -> • P NP, origin=5
+  08. S -> NP VP •, origin=0
+  09. P -> • for, origin=5
+  10. P -> • in, origin=5
+  11. γ -> S •, origin=0
+
+S[6]
+------------------------------------------------------------
+  01. P -> for •, origin=5
+  02. PP -> P • NP, origin=5
+  03. NP -> • Det N, origin=6
+  04. NP -> • Det N PP, origin=6
+  05. NP -> • NP PP, origin=6
+  06. Det -> • the, origin=6
+
+S[7]
+------------------------------------------------------------
+  01. Det -> the •, origin=6
+  02. NP -> Det • N, origin=6
+  03. NP -> Det • N PP, origin=6
+  04. N -> • student, origin=7
+  05. N -> • timetable, origin=7
+  06. N -> • exam, origin=7
+  07. N -> • library, origin=7
+
+S[8]
+------------------------------------------------------------
+  01. N -> exam •, origin=7
+  02. NP -> Det N •, origin=6
+  03. NP -> Det N • PP, origin=6
+  04. PP -> P NP •, origin=5
+  05. NP -> NP • PP, origin=6
+  06. PP -> • P NP, origin=8
+  07. NP -> Det N PP •, origin=3
+  08. VP -> V NP PP •, origin=2
+  09. NP -> NP PP •, origin=3
+  10. P -> • for, origin=8
+  11. P -> • in, origin=8
+  12. VP -> V NP •, origin=2
+  13. VP -> V NP • PP, origin=2
+  14. NP -> NP • PP, origin=3
+  15. S -> NP VP •, origin=0
+  16. γ -> S •, origin=0
+
+======================================================================
+LEFT RECURSION IN EARLEY PARSING
+======================================================================
+
+The grammar contains:
+
+    NP -> NP PP
+
+This is left-recursive.
+
+Unlike naive recursive descent,
+Earley parsing can handle this rule
+without infinite recursive calls.
+
+The chart stores states together with
+their origin positions.
+
+Repeated states are not inserted again.
+
+Therefore the parser remains finite.
+
+
+======================================================================
+BACKPOINTERS AND PACKED AMBIGUITY
+======================================================================
+
+Earley states may store backpointer information.
+
+Backpointers can record:
+
+    • where a constituent started
+    • which previous state produced it
+    • which completed constituent was attached
+
+For an ambiguous sentence, multiple derivations
+can share the same chart states.
+
+This compact representation is called
+packed ambiguity representation.
+
+Therefore the parser does not need to store
+every complete tree separately during recognition.
+
+
+======================================================================
+COMPLEXITY COMPARISON
+======================================================================
+
+Top-down recursive descent:
+
+    Simple deterministic case:
+        approximately O(n)
+
+    Highly ambiguous grammar:
+        may become exponential
+        because of backtracking.
+
+Earley parser:
+
+    Best case:
+        O(n)
+
+    Typical unambiguous CFG:
+        O(n^2)
+
+    Worst case:
+        O(n^3)
+
+Earley therefore provides a more predictable
+worst-case bound for general CFG parsing.
+
+
+======================================================================
+EXAMPLE 3: UNGRAMMATICAL SENTENCE
+======================================================================
+Sentence: student checks
+Result: REJECTED
+Total chart states: 6
+Runtime: 0.000081 seconds
+
+======================================================================
+TASK 7 IMPLEMENTATION COMPLETED
+======================================================================

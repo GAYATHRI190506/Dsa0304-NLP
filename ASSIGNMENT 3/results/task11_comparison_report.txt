@@ -1,0 +1,36 @@
+DSA03 NLP ASSIGNMENT - TASK 11
+COMPARISON AND RECOMMENDATION
+
+EMPIRICAL RESULTS
+=================
+
+Top-Down
+Sentences tested: 30
+Accepted: 28
+Rejected: 2
+Average steps: 61.00
+Average runtime: 0.000038 sec
+Acceptance rate: 93.33%
+
+Earley
+Sentences tested: 30
+Accepted: 30
+Rejected: 0
+Average steps: 134.33
+Average runtime: 0.000257 sec
+Acceptance rate: 100.00%
+
+Viterbi
+Sentences tested: 30
+Accepted: 30
+Rejected: 0
+Average steps: 825.07
+Average runtime: 0.000121 sec
+Acceptance rate: 100.00%
+
+RECOMMENDATION
+==============
+
+The recommended architecture for the university helpdesk is Earley parsing combined with feature structures and PCFG/Viterbi ranking.
+
+Earley provides broad CFG coverage, recursion handling and ambiguity support. Feature structures add linguistic constraints such as agreement and subcategorization. PCFG/Viterbi ranking can then select the most probable interpretation among multiple valid parses.

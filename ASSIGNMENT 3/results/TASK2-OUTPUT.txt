@@ -1,0 +1,242 @@
+======================================================================
+TASK 2 - DERIVATIONS AND PARSE TREES
+======================================================================
+
+FIVE TEST SENTENCES
+----------------------------------------------------------------------
+1. The student needs the timetable.
+2. The student submits the assignment.
+3. The student checks the portal.
+4. The student needs the timetable for the exam.
+5. The student checks the timetable and downloads the form.
+
+LEFTMOST DERIVATION - Sentence 1
+----------------------------------------------------------------------
+ 0. S
+ 1. NP VP
+ 2. Det N VP
+ 3. The N VP
+ 4. The student VP
+ 5. The student V NP
+ 6. The student needs NP
+ 7. The student needs Det N
+ 8. The student needs the N
+ 9. The student needs the timetable
+
+RIGHTMOST DERIVATION - Sentence 1
+----------------------------------------------------------------------
+ 0. S
+ 1. NP VP
+ 2. NP V NP
+ 3. NP V Det N
+ 4. NP V Det timetable
+ 5. NP V the timetable
+ 6. NP needs the timetable
+ 7. Det N needs the timetable
+ 8. The N needs the timetable
+ 9. The student needs the timetable
+
+======================================================================
+PARSE TREE - SENTENCE 1
+======================================================================
+└── S
+    ├── NP
+    │   ├── Det
+    │   │   └── The
+    │   └── N
+    │       └── student
+    └── VP
+        ├── V
+        │   └── needs
+        └── NP
+            ├── Det
+            │   └── the
+            └── N
+                └── timetable
+
+Bracketed notation:
+(S (NP (Det The) (N student)) (VP (V needs) (NP (Det the) (N timetable))))
+
+Node count : 14
+Tree height: 5
+
+======================================================================
+PARSE TREE - SENTENCE 2
+======================================================================
+└── S
+    ├── NP
+    │   ├── Det
+    │   │   └── The
+    │   └── N
+    │       └── student
+    └── VP
+        ├── V
+        │   └── submits
+        └── NP
+            ├── Det
+            │   └── the
+            └── N
+                └── assignment
+
+Bracketed notation:
+(S (NP (Det The) (N student)) (VP (V submits) (NP (Det the) (N assignment))))
+
+Node count : 14
+Tree height: 5
+
+======================================================================
+PARSE TREE - SENTENCE 3
+======================================================================
+└── S
+    ├── NP
+    │   ├── Det
+    │   │   └── The
+    │   └── N
+    │       └── student
+    └── VP
+        ├── V
+        │   └── checks
+        └── NP
+            ├── Det
+            │   └── the
+            └── N
+                └── portal
+
+Bracketed notation:
+(S (NP (Det The) (N student)) (VP (V checks) (NP (Det the) (N portal))))
+
+Node count : 14
+Tree height: 5
+
+======================================================================
+AMBIGUOUS SENTENCE 1 - PP ATTACHMENT
+======================================================================
+Sentence: The student needs the timetable for the exam.
+
+Parse A - PP attaches to NP:
+└── S
+    ├── NP
+    │   ├── Det
+    │   │   └── The
+    │   └── N
+    │       └── student
+    └── VP
+        ├── V
+        │   └── needs
+        └── NP
+            ├── Det
+            │   └── the
+            ├── N
+            │   └── timetable
+            └── PP
+                ├── P
+                │   └── for
+                └── NP
+                    ├── Det
+                    │   └── the
+                    └── N
+                        └── exam
+
+Bracketed:
+(S (NP (Det The) (N student)) (VP (V needs) (NP (Det the) (N timetable) (PP (P for) (NP (Det the) (N exam))))))
+
+Parse B - PP attaches to VP:
+└── S
+    ├── NP
+    │   ├── Det
+    │   │   └── The
+    │   └── N
+    │       └── student
+    └── VP
+        ├── V
+        │   └── needs
+        ├── NP
+        │   ├── Det
+        │   │   └── the
+        │   └── N
+        │       └── timetable
+        └── PP
+            ├── P
+            │   └── for
+            └── NP
+                ├── Det
+                │   └── the
+                └── N
+                    └── exam
+
+Bracketed:
+(S (NP (Det The) (N student)) (VP (V needs) (NP (Det the) (N timetable)) (PP (P for) (NP (Det the) (N exam)))))
+
+======================================================================
+AMBIGUOUS SENTENCE 2 - COORDINATION
+======================================================================
+Sentence: The student checks the timetable and downloads the form.
+
+Parse A - VP coordination:
+└── S
+    ├── NP
+    │   ├── Det
+    │   │   └── The
+    │   └── N
+    │       └── student
+    └── VP
+        ├── VP
+        │   ├── V
+        │   │   └── checks
+        │   └── NP
+        │       ├── Det
+        │       │   └── the
+        │       └── N
+        │           └── timetable
+        ├── Conj
+        │   └── and
+        └── VP
+            ├── V
+            │   └── downloads
+            └── NP
+                ├── Det
+                │   └── the
+                └── N
+                    └── form
+
+Bracketed:
+(S (NP (Det The) (N student)) (VP (VP (V checks) (NP (Det the) (N timetable))) (Conj and) (VP (V downloads) (NP (Det the) (N form)))))
+
+Parse B - S coordination:
+└── S
+    ├── NP
+    │   ├── Det
+    │   │   └── The
+    │   └── N
+    │       └── student
+    ├── VP
+    │   ├── V
+    │   │   └── checks
+    │   └── NP
+    │       ├── Det
+    │       │   └── the
+    │       └── N
+    │           └── timetable
+    ├── Conj
+    │   └── and
+    └── S
+        ├── NP
+        │   ├── Det
+        │   │   └── the
+        │   └── N
+        │       └── student
+        └── VP
+            ├── V
+            │   └── downloads
+            └── NP
+                ├── Det
+                │   └── the
+                └── N
+                    └── form
+
+Bracketed:
+(S (NP (Det The) (N student)) (VP (V checks) (NP (Det the) (N timetable))) (Conj and) (S (NP (Det the) (N student)) (VP (V downloads) (NP (Det the) (N form)))))
+
+======================================================================
+TASK 2 IMPLEMENTATION COMPLETED
+======================================================================

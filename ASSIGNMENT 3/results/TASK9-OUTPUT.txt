@@ -1,0 +1,183 @@
+======================================================================
+DSA03 NLP ASSIGNMENT - TASK 9
+PCFG AND PROBABILISTIC PARSING
+======================================================================
+
+Training a PCFG from a 20-sentence mini-treebank...
+Training trees used: 20
+
+======================================================================
+9. MINI TREEBANK STATISTICS
+======================================================================
+
+Number of training trees: 20
+Total rule occurrences: 180
+
+Rule occurrences by LHS:
+  Det      40
+  N        40
+  NP       40
+  S        20
+  V        20
+  VP       20
+
+======================================================================
+2. PCFG RULE PROBABILITIES
+======================================================================
+
+Det rules:
+  Det -> a               P = 0.0250
+  Det -> the             P = 0.9750
+
+N rules:
+  N -> account         P = 0.0250
+  N -> answer          P = 0.0250
+  N -> approval        P = 0.0250
+  N -> assignment      P = 0.0250
+  N -> certificate     P = 0.0250
+  N -> deadline        P = 0.0250
+  N -> document        P = 0.0250
+  N -> form            P = 0.0250
+  N -> hostel          P = 0.0250
+  N -> message         P = 0.0250
+  N -> notice          P = 0.0250
+  N -> notification    P = 0.0250
+  N -> password        P = 0.0250
+  N -> permission      P = 0.0250
+  N -> portal          P = 0.0250
+  N -> record          P = 0.0250
+  N -> result          P = 0.0250
+  N -> schedule        P = 0.0250
+  N -> status          P = 0.0250
+  N -> student         P = 0.5000
+  N -> timetable       P = 0.0250
+
+NP rules:
+  NP -> Det N           P = 1.0000
+
+S rules:
+  S -> NP VP           P = 1.0000
+
+V rules:
+  V -> checks          P = 0.5000
+  V -> needs           P = 0.5000
+
+VP rules:
+  VP -> V NP            P = 1.0000
+
+======================================================================
+3. PROBABILITY OF A PARSE TREE
+======================================================================
+
+Sentence:
+the student needs the timetable
+
+Rules used:
+  S -> NP VP
+  NP -> Det N
+  VP -> V NP
+  Det -> the
+  N -> student
+  V -> needs
+  NP -> Det N
+  Det -> the
+  N -> timetable
+
+Tree probability = 0.0059414062
+
+======================================================================
+4. AMBIGUOUS PARSE PROBABILITIES
+======================================================================
+
+Sentence:
+the student checks the timetable for the exam
+
+Parse 1: PP attached to VP
+Probability = 0.000000000000
+
+Parse 2: PP attached to NP
+Probability = 0.000000000000
+
+VITERBI DECISION: Both parses have equal probability.
+
+======================================================================
+5. CNF REPRESENTATION
+======================================================================
+
+Binary CFG rules:
+  S -> NP VP
+  VP -> V NP
+  VP -> VP PP
+  NP -> Det N
+  NP -> NP PP
+  PP -> P NP
+
+Lexical rules:
+  Det -> 'the'
+  Det -> 'a'
+  N -> 'student'
+  N -> 'timetable'
+  N -> 'exam'
+  V -> 'checks'
+  V -> 'needs'
+  P -> 'for'
+
+The grammar is already in a binary-friendly form for CKY-style dynamic programming.
+
+======================================================================
+6. VITERBI / CKY-STYLE PARSING
+======================================================================
+
+Sentence:
+the student needs the timetable
+Best parse:
+(S (NP (Det the) (N student)) (VP (V needs) (NP (Det the) (N timetable))))
+Probability: 0.0059414062
+CKY operations: 60
+
+Sentence:
+the student checks the assignment
+Best parse:
+(S (NP (Det the) (N student)) (VP (V checks) (NP (Det the) (N assignment))))
+Probability: 0.0059414062
+CKY operations: 60
+
+Sentence:
+the student needs the hostel
+Best parse:
+(S (NP (Det the) (N student)) (VP (V needs) (NP (Det the) (N hostel))))
+Probability: 0.0059414062
+CKY operations: 60
+
+======================================================================
+7. UNKNOWN WORD TEST
+======================================================================
+
+Sentence:
+the student needs the scholarship
+Result: NO PARSE
+Reason: 'scholarship' is not present in the learned lexical rules.
+
+======================================================================
+8. PCFG ASSUMPTIONS AND FAILURE CASES
+======================================================================
+
+PCFG assumptions:
+1. Each nonterminal chooses a grammar rule independently.
+2. The probability of a tree is the product of its rule probabilities.
+3. Rule probabilities for one nonterminal sum to 1.
+4. The grammar structure determines the possible parses.
+5. Viterbi parsing chooses the highest-probability parse.
+
+Important limitations:
+1. PCFG probabilities depend only on the parent nonterminal.
+2. Lexical context is not directly represented.
+3. Long-distance dependencies are difficult to model.
+4. Unknown words cause failures without smoothing or an OOV model.
+5. Ambiguity may be resolved incorrectly when structural context
+   is not captured by the grammar.
+
+
+======================================================================
+TASK 9 IMPLEMENTATION COMPLETED
+======================================================================

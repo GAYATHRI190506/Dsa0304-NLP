@@ -1,0 +1,112 @@
+===========================================================================
+TASK 4 - AGREEMENT
+===========================================================================
+
+AGREEMENT-AWARE CFG
+---------------------------------------------------------------------------
+S -> NP_SG VP_SG
+S -> NP_PL VP_PL
+NP_SG -> DET_SG N_SG
+NP_PL -> DET_PL N_PL
+NP_SG -> PRO_SG
+NP_PL -> PRO_PL
+VP_SG -> V_SG
+VP_SG -> V_SG NP_SG
+VP_SG -> V_SG NP_PL
+VP_PL -> V_PL
+VP_PL -> V_PL NP_SG
+VP_PL -> V_PL NP_PL
+NP_NOM -> PRO_NOM
+NP_ACC -> PRO_ACC
+
+Agreement-aware rules: 14
+
+---------------------------------------------------------------------------
+EXPECTED: Grammatical
+---------------------------------------------------------------------------
+The student needs the timetable.              Grammatical     PASS
+The students need the timetable.              Grammatical     PASS
+This student needs the timetable.             Grammatical     PASS
+These students need the timetable.            Grammatical     PASS
+He needs the assignment.                      Ungrammatical   FAIL
+They need the assignment.                     Ungrammatical   FAIL
+---------------------------------------------------------------------------
+Correct: 4/6
+
+---------------------------------------------------------------------------
+EXPECTED: Ungrammatical
+---------------------------------------------------------------------------
+The student need the timetable.               Ungrammatical   PASS
+The students needs the timetable.             Ungrammatical   PASS
+These student need the timetable.             Ungrammatical   PASS
+This students needs the timetable.            Ungrammatical   PASS
+He need the assignment.                       Ungrammatical   PASS
+They needs the assignment.                    Ungrammatical   PASS
+---------------------------------------------------------------------------
+Correct: 6/6
+
+===========================================================================
+UNIFICATION TESTS
+===========================================================================
+
+Test 1
+Feature 1: {'NUM': 'SG'}
+Feature 2: {'NUM': 'SG'}
+Result   : {'NUM': 'SG'}
+Status   : SUCCESS
+
+Test 2
+Feature 1: {'NUM': 'PL', 'PER': '3'}
+Feature 2: {'NUM': 'PL'}
+Result   : {'NUM': 'PL', 'PER': '3'}
+Status   : SUCCESS
+
+Test 3
+Feature 1: {'NUM': 'SG'}
+Feature 2: {'NUM': 'PL'}
+Result   : None
+Status   : FAIL - Feature conflict
+
+===========================================================================
+PRONOUN CASE TESTS
+===========================================================================
+he       required=NOM  result=PASS
+they     required=NOM  result=PASS
+him      required=ACC  result=PASS
+them     required=ACC  result=PASS
+him      required=NOM  result=FAIL
+
+===========================================================================
+FEATURE-BASED APPROACH
+===========================================================================
+
+The agreement-aware CFG uses separate nonterminals such as
+NP_SG, NP_PL, VP_SG and VP_PL.
+
+This enforces agreement directly through grammar rules.
+
+However, multiplying nonterminals becomes expensive when more
+features are added, such as:
+
+    Number
+    Person
+    Case
+    Gender
+
+A feature-based grammar stores these properties as attributes
+inside feature structures.
+
+For example:
+
+    [CAT: NP
+     NUM: SG
+     PER: 3]
+
+Feature unification checks whether two structures are compatible.
+
+Therefore, feature structures reduce rule duplication and make
+the grammar easier to maintain.
+
+===========================================================================
+TASK 4 IMPLEMENTATION COMPLETED
+===========================================================================

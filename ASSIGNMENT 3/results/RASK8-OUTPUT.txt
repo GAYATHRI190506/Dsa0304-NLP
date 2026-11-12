@@ -1,0 +1,218 @@
+======================================================================
+DSA03 NLP ASSIGNMENT - TASK 8
+FEATURE STRUCTURES, AVMs, UNIFICATION AND EARLEY
+======================================================================
+
+======================================================================
+3. REENTRANCY
+======================================================================
+Feature structure with shared NUM value:
+[
+  SUBJ:
+    [
+      NUM:
+        [
+          VALUE: singular
+        ]
+    ]
+  VERB:
+    [
+      NUM:
+        [
+          VALUE: singular
+        ]
+    ]
+]
+
+Reentrant paths:
+SUBJ.NUM -> {'VALUE': 'singular'}
+VERB.NUM -> {'VALUE': 'singular'}
+
+Both paths point to the same feature value.
+This represents reentrancy.
+
+======================================================================
+4. UNIFICATION EXAMPLES
+======================================================================
+
+Example 1 - Successful unification
+FS1: {'NUM': 'singular', 'PER': 3}
+FS2: {'NUM': 'singular', 'CASE': 'nom'}
+Result: {'NUM': 'singular', 'PER': 3, 'CASE': 'nom'}
+
+Example 2 - Nested successful unification
+FS3: {'SUBJ': {'NUM': 'plural'}, 'CASE': 'nom'}
+FS4: {'SUBJ': {'PER': 3}}
+Result: {'SUBJ': {'NUM': 'plural', 'PER': 3}, 'CASE': 'nom'}
+
+Example 3 - Failed unification
+FS5: {'NUM': 'singular', 'PER': 3}
+FS6: {'NUM': 'plural', 'PER': 3}
+Result: None
+UNIFICATION FAILURE: conflicting NUM values.
+
+======================================================================
+5. LEXICAL FEATURE STRUCTURES
+======================================================================
+
+At least 5 lexical entries with NUM, PER, CASE and SUBCAT:
+
+WORD: student
+[
+  CAT: N
+  NUM: singular
+  PER: 3
+  CASE: nom/acc
+  SUBCAT: []
+]
+
+WORD: students
+[
+  CAT: N
+  NUM: plural
+  PER: 3
+  CASE: nom/acc
+  SUBCAT: []
+]
+
+WORD: the
+[
+  CAT: DET
+  NUM: any
+  PER: any
+  CASE: any
+  SUBCAT: ['N']
+]
+
+WORD: a
+[
+  CAT: DET
+  NUM: singular
+  PER: any
+  CASE: any
+  SUBCAT: ['N']
+]
+
+WORD: needs
+[
+  CAT: V
+  NUM: singular
+  PER: 3
+  CASE: none
+  SUBCAT: ['NP']
+]
+
+WORD: need
+[
+  CAT: V
+  NUM: plural
+  PER: any
+  CASE: none
+  SUBCAT: ['NP']
+]
+
+WORD: checks
+[
+  CAT: V
+  NUM: singular
+  PER: 3
+  CASE: none
+  SUBCAT: ['NP']
+]
+
+WORD: check
+[
+  CAT: V
+  NUM: plural
+  PER: any
+  CASE: none
+  SUBCAT: ['NP']
+]
+
+
+======================================================================
+6. FEATURE-BASED GRAMMAR
+======================================================================
+
+Feature grammar agreement tests:
+
+student needs the student                -> ACCEPT
+students need the student                -> ACCEPT
+student need the student                 -> REJECT
+students needs the student               -> REJECT
+
+======================================================================
+7. FEATURE CHECKS IN EARLEY COMPLETER
+======================================================================
+
+Parent state:
+[
+  SUBJ:
+    [
+      NUM: singular
+      PER: 3
+    ]
+]
+
+Compatible child features:
+[
+  NUM: singular
+  PER: 3
+]
+Completion result:
+[
+  SUBJ:
+    [
+      NUM: singular
+      PER: 3
+    ]
+  NUM: singular
+  PER: 3
+]
+
+Incompatible child features:
+[
+  NUM: plural
+  PER: 3
+]
+Completion accepted unexpectedly:
+[
+  SUBJ:
+    [
+      NUM: singular
+      PER: 3
+    ]
+  NUM: plural
+  PER: 3
+]
+
+======================================================================
+8. FEATURE PATH EXAMPLES
+======================================================================
+
+Feature paths:
+SUBJ.AGR.NUM         -> singular
+SUBJ.AGR.PER         -> 3
+SUBJ.CASE            -> nom
+OBJ.AGR.NUM          -> plural
+OBJ.CASE             -> acc
+
+======================================================================
+TASK 8 SUMMARY
+======================================================================
+
+1. AVMs represent linguistic information as attribute-value pairs.
+2. Feature paths access nested information such as SUBJ.AGR.NUM.
+3. Reentrancy represents shared feature values.
+4. Unification combines compatible feature structures.
+5. Conflicting features cause unification failure.
+6. Lexical entries contain NUM, PER, CASE and SUBCAT information.
+7. Feature-based grammar checks agreement and subcategorization.
+8. Earley completion can use unification to reject incompatible states.
+9. Feature structures reduce the rule explosion of agreement-aware CFGs.
+10. The same feature mechanism can be extended to a full NLP parser.
+
+
+======================================================================
+TASK 8 IMPLEMENTATION COMPLETED
+======================================================================

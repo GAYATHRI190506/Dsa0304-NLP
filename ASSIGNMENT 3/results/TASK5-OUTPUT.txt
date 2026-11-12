@@ -1,0 +1,128 @@
+===========================================================================
+TASK 5 - VERB SUBCATEGORIZATION
+===========================================================================
+
+===========================================================================
+VERB SUBCATEGORIZATION FRAMES
+===========================================================================
+
+INTRANSITIVE
+---------------------------------------------------------------------------
+Description : Verb requires no object.
+Pattern     : V
+Examples    : crash, arrive, sleep
+
+TRANSITIVE
+---------------------------------------------------------------------------
+Description : Verb requires one noun phrase object.
+Pattern     : V NP
+Examples    : check, submit, download, view
+
+DITRANSITIVE
+---------------------------------------------------------------------------
+Description : Verb takes two complements, typically NP + NP.
+Pattern     : V NP NP
+Examples    : give, send, provide
+
+SENTENTIAL_COMPLEMENT
+---------------------------------------------------------------------------
+Description : Verb takes an embedded sentence.
+Pattern     : V S
+Examples    : know, explain, confirm
+
+PP_COMPLEMENT
+---------------------------------------------------------------------------
+Description : Verb requires a prepositional phrase.
+Pattern     : V PP
+Examples    : apply, depend, belong
+
+NP_PP
+---------------------------------------------------------------------------
+Description : Verb takes an NP followed by a PP.
+Pattern     : V NP PP
+Examples    : provide, send, give
+
+===========================================================================
+VERBS WITH MULTIPLE FRAMES
+===========================================================================
+give       -> DITRANSITIVE, NP_PP
+send       -> DITRANSITIVE, NP_PP
+provide    -> DITRANSITIVE, NP_PP
+know       -> SENTENTIAL_COMPLEMENT, TRANSITIVE
+explain    -> SENTENTIAL_COMPLEMENT, TRANSITIVE
+confirm    -> SENTENTIAL_COMPLEMENT, TRANSITIVE
+
+===========================================================================
+COMPLEMENT VS ADJUNCT
+===========================================================================
+
+Complements:
+  submit     + the assignment
+  check      + the timetable
+  apply      + for the hostel
+  provide    + placement information
+
+Adjuncts:
+  check      + the timetable quickly
+  submit     + the assignment today
+  view       + the result online
+  download   + the form yesterday
+
+Complement tests:
+1. A complement is selected by the verb.
+2. Removing a required complement may make the sentence
+   incomplete or ungrammatical.
+3. The type of complement is constrained by the verb.
+
+Adjunct tests:
+1. Adjuncts provide optional information.
+2. They can usually be removed without making the sentence
+   structurally incomplete.
+3. They are generally more freely repeatable and mobile.
+
+
+===========================================================================
+SUBCATEGORIZATION TEST SENTENCES
+===========================================================================
+The student checks the timetable.                Expected=True  Predicted=True  PASS
+The student submits the assignment.              Expected=True  Predicted=True  PASS
+The university provides the student information. Expected=True  Predicted=True  PASS
+The student knows that the exam starts.          Expected=True  Predicted=True  PASS
+The student applies for the hostel.              Expected=True  Predicted=True  PASS
+The portal crashed.                              Expected=True  Predicted=True  PASS
+Submit.                                          Expected=False Predicted=False PASS
+Check.                                           Expected=False Predicted=False PASS
+Provide.                                         Expected=False Predicted=False PASS
+The portal crashed the form.                     Expected=False Predicted=False PASS
+The student checks.                              Expected=False Predicted=False PASS
+The student applies the hostel.                  Expected=False Predicted=False PASS
+---------------------------------------------------------------------------
+Correct: 12/12
+
+===========================================================================
+PARSING COST AND AMBIGUITY
+===========================================================================
+
+A verb may license more than one subcategorization frame.
+
+For example:
+
+    provide + NP + NP
+    provide + NP + PP
+
+Therefore, when the parser encounters 'provide', it may need
+to consider multiple possible structures.
+
+This increases the number of candidate parses.
+
+A subcategorization lexicon reduces this ambiguity because
+the parser can reject structures that do not satisfy the
+selected verb's valence requirements.
+
+This improves grammaticality checking and reduces unnecessary
+parse trees.
+
+
+===========================================================================
+TASK 5 IMPLEMENTATION COMPLETED
+===========================================================================

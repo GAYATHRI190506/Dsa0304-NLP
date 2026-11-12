@@ -1,0 +1,206 @@
+DSA03 NLP ASSIGNMENT - TASK 10
+IMPLEMENTATION AND BENCHMARKING
+======================================================================
+
+Test set size: 30 sentences
+
+======================================================================
+BENCHMARKING: Top-Down
+======================================================================
+01. the student needs the timetable                         ACCEPT  steps=61      time=0.000049s
+02. the student checks the assignment                       ACCEPT  steps=61      time=0.000051s
+03. the student needs the hostel                            ACCEPT  steps=61      time=0.000036s
+04. the student checks the portal                           ACCEPT  steps=61      time=0.000029s
+05. the student needs the schedule                          ACCEPT  steps=61      time=0.000059s
+06. the student checks the result                           ACCEPT  steps=61      time=0.000047s
+07. the student needs the form                              ACCEPT  steps=61      time=0.000032s
+08. the student checks the notice                           ACCEPT  steps=61      time=0.000029s
+09. the student needs the certificate                       ACCEPT  steps=61      time=0.000028s
+10. the student checks the deadline                         ACCEPT  steps=61      time=0.000036s
+11. the student needs the document                          ACCEPT  steps=61      time=0.000068s
+12. the student checks the notification                     ACCEPT  steps=61      time=0.000041s
+13. the student needs the record                            ACCEPT  steps=61      time=0.000032s
+14. the student checks the password                         ACCEPT  steps=61      time=0.000029s
+15. the student needs the answer                            ACCEPT  steps=61      time=0.000027s
+16. the student checks the message                          ACCEPT  steps=61      time=0.000071s
+17. the student needs the approval                          ACCEPT  steps=61      time=0.000038s
+18. the student checks the status                           ACCEPT  steps=61      time=0.000033s
+19. the student needs the permission                        ACCEPT  steps=61      time=0.000027s
+20. the student checks the account                          ACCEPT  steps=61      time=0.000028s
+21. the student needs the timetable                         ACCEPT  steps=61      time=0.000028s
+22. the student checks the timetable                        ACCEPT  steps=61      time=0.000028s
+23. the student needs the assignment                        ACCEPT  steps=61      time=0.000032s
+24. the student checks the exam                             ACCEPT  steps=61      time=0.000032s
+25. the student needs the exam                              ACCEPT  steps=61      time=0.000028s
+26. the student checks the schedule                         ACCEPT  steps=61      time=0.000032s
+27. the student needs the result                            ACCEPT  steps=61      time=0.000031s
+28. the student checks the certificate                      ACCEPT  steps=61      time=0.000034s
+29. the student checks the timetable for the exam           REJECT  steps=61      time=0.000064s
+30. the student needs the document for the course           REJECT  steps=61      time=0.000031s
+
+======================================================================
+BENCHMARKING: Earley
+======================================================================
+01. the student needs the timetable                         ACCEPT  steps=129     time=0.000312s
+02. the student checks the assignment                       ACCEPT  steps=129     time=0.000265s
+03. the student needs the hostel                            ACCEPT  steps=129     time=0.000233s
+04. the student checks the portal                           ACCEPT  steps=129     time=0.000222s
+05. the student needs the schedule                          ACCEPT  steps=129     time=0.000230s
+06. the student checks the result                           ACCEPT  steps=129     time=0.000218s
+07. the student needs the form                              ACCEPT  steps=129     time=0.000216s
+08. the student checks the notice                           ACCEPT  steps=129     time=0.000224s
+09. the student needs the certificate                       ACCEPT  steps=129     time=0.000219s
+10. the student checks the deadline                         ACCEPT  steps=129     time=0.000215s
+11. the student needs the document                          ACCEPT  steps=129     time=0.000219s
+12. the student checks the notification                     ACCEPT  steps=129     time=0.000254s
+13. the student needs the record                            ACCEPT  steps=129     time=0.000252s
+14. the student checks the password                         ACCEPT  steps=129     time=0.000218s
+15. the student needs the answer                            ACCEPT  steps=129     time=0.000219s
+16. the student checks the message                          ACCEPT  steps=129     time=0.000218s
+17. the student needs the approval                          ACCEPT  steps=129     time=0.000282s
+18. the student checks the status                           ACCEPT  steps=129     time=0.000217s
+19. the student needs the permission                        ACCEPT  steps=129     time=0.000215s
+20. the student checks the account                          ACCEPT  steps=129     time=0.000213s
+21. the student needs the timetable                         ACCEPT  steps=129     time=0.000217s
+22. the student checks the timetable                        ACCEPT  steps=129     time=0.000218s
+23. the student needs the assignment                        ACCEPT  steps=129     time=0.000273s
+24. the student checks the exam                             ACCEPT  steps=129     time=0.000254s
+25. the student needs the exam                              ACCEPT  steps=129     time=0.000254s
+26. the student checks the schedule                         ACCEPT  steps=129     time=0.000262s
+27. the student needs the result                            ACCEPT  steps=129     time=0.000353s
+28. the student checks the certificate                      ACCEPT  steps=129     time=0.000402s
+29. the student checks the timetable for the exam           ACCEPT  steps=209     time=0.000393s
+30. the student needs the document for the course           ACCEPT  steps=209     time=0.000407s
+
+======================================================================
+BENCHMARKING: Viterbi
+======================================================================
+01. the student needs the timetable                         ACCEPT  steps=680     time=0.000099s
+02. the student checks the assignment                       ACCEPT  steps=680     time=0.000153s
+03. the student needs the hostel                            ACCEPT  steps=680     time=0.000203s
+04. the student checks the portal                           ACCEPT  steps=680     time=0.000086s
+05. the student needs the schedule                          ACCEPT  steps=680     time=0.000075s
+06. the student checks the result                           ACCEPT  steps=680     time=0.000090s
+07. the student needs the form                              ACCEPT  steps=680     time=0.000113s
+08. the student checks the notice                           ACCEPT  steps=680     time=0.000091s
+09. the student needs the certificate                       ACCEPT  steps=680     time=0.000089s
+10. the student checks the deadline                         ACCEPT  steps=680     time=0.000075s
+11. the student needs the document                          ACCEPT  steps=680     time=0.000146s
+12. the student checks the notification                     ACCEPT  steps=680     time=0.000080s
+13. the student needs the record                            ACCEPT  steps=680     time=0.000110s
+14. the student checks the password                         ACCEPT  steps=680     time=0.000075s
+15. the student needs the answer                            ACCEPT  steps=680     time=0.000137s
+16. the student checks the message                          ACCEPT  steps=680     time=0.000078s
+17. the student needs the approval                          ACCEPT  steps=680     time=0.000110s
+18. the student checks the status                           ACCEPT  steps=680     time=0.000075s
+19. the student needs the permission                        ACCEPT  steps=680     time=0.000074s
+20. the student checks the account                          ACCEPT  steps=680     time=0.000134s
+21. the student needs the timetable                         ACCEPT  steps=680     time=0.000079s
+22. the student checks the timetable                        ACCEPT  steps=680     time=0.000113s
+23. the student needs the assignment                        ACCEPT  steps=680     time=0.000073s
+24. the student checks the exam                             ACCEPT  steps=680     time=0.000159s
+25. the student needs the exam                              ACCEPT  steps=680     time=0.000114s
+26. the student checks the schedule                         ACCEPT  steps=680     time=0.000076s
+27. the student needs the result                            ACCEPT  steps=680     time=0.000073s
+28. the student checks the certificate                      ACCEPT  steps=680     time=0.000147s
+29. the student checks the timetable for the exam           ACCEPT  steps=2856    time=0.000301s
+30. the student needs the document for the course           ACCEPT  steps=2856    time=0.000411s
+
+======================================================================
+BENCHMARK SUMMARY
+======================================================================
+
+Top-Down
+  Sentences tested : 30
+  Accepted         : 28
+  Rejected         : 2
+  Total parses     : 28
+  Total steps      : 1830
+  Total runtime    : 0.001129 sec
+  Average runtime  : 0.000038 sec
+
+Earley
+  Sentences tested : 30
+  Accepted         : 30
+  Rejected         : 0
+  Total parses     : 30
+  Total steps      : 4030
+  Total runtime    : 0.007696 sec
+  Average runtime  : 0.000257 sec
+
+Viterbi
+  Sentences tested : 30
+  Accepted         : 30
+  Rejected         : 0
+  Total parses     : 30
+  Total steps      : 24752
+  Total runtime    : 0.003638 sec
+  Average runtime  : 0.000121 sec
+
+======================================================================
+SPECIAL TEST CASES
+======================================================================
+
+Recursion:
+Sentence: the student checks the timetable for the exam
+  Top-Down   REJECT  measure=61     time=0.000065s
+  Earley     ACCEPT  measure=125    time=0.000627s
+  Viterbi    ACCEPT  measure=2856   time=0.000303s
+
+Ambiguity:
+Sentence: the student checks the timetable for the exam
+  Top-Down   REJECT  measure=61     time=0.000395s
+  Earley     ACCEPT  measure=125    time=0.000601s
+  Viterbi    ACCEPT  measure=2856   time=0.000445s
+
+Ungrammatical:
+Sentence: student checks timetable
+  Top-Down   REJECT  measure=5      time=0.000089s
+  Earley     REJECT  measure=6      time=0.000119s
+  Viterbi    REJECT  measure=136    time=0.000082s
+
+Long sentence:
+Sentence: the student checks the timetable for the exam
+  Top-Down   REJECT  measure=61     time=0.000104s
+  Earley     ACCEPT  measure=125    time=0.000852s
+  Viterbi    ACCEPT  measure=2856   time=0.000734s
+
+======================================================================
+COMPARISON WITH TASK 7 AND TASK 9
+======================================================================
+
+Task 7 - Earley Parsing
+-----------------------
+• Handles recursive CFG structures.
+• Maintains chart states.
+• Avoids repeated recomputation.
+• Suitable for ambiguous and left-recursive grammars.
+
+Task 9 - PCFG / Viterbi
+-----------------------
+• Assigns probabilities to grammar rules.
+• Calculates probability of a parse.
+• Selects the highest-probability interpretation.
+• Useful for resolving structural ambiguity.
+
+Task 10 - Benchmarking
+----------------------
+• Runs the implementations on a common 30-sentence test set.
+• Measures parser steps and runtime.
+• Tests grammatical, ambiguous, recursive,
+  ungrammatical and longer sentences.
+• Provides empirical evidence for parser comparison.
+
+
+======================================================================
+CREATING BENCHMARK PLOT
+======================================================================
+
+Plot saved to:
+results\task10_runtime_comparison.png
+Benchmark CSV saved to:
+results\task10_benchmark_results.csv
+
+======================================================================
+TASK 10 IMPLEMENTATION COMPLETED
+======================================================================

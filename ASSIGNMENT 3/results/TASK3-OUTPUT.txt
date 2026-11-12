@@ -1,0 +1,236 @@
+======================================================================
+TASK 3 - SENTENCE-LEVEL CONSTRUCTIONS
+======================================================================
+
+======================================================================
+1. DECLARATIVE
+======================================================================
+Sentence:
+The student needs the timetable.
+
+Parse tree:
+└── S
+    ├── NP
+    │   ├── Det
+    │   │   └── The
+    │   └── N
+    │       └── student
+    └── VP
+        ├── V
+        │   └── needs
+        └── NP
+            ├── Det
+            │   └── the
+            └── N
+                └── timetable
+
+Bracketed notation:
+(S (NP (Det The) (N student)) (VP (V needs) (NP (Det the) (N timetable))))
+
+======================================================================
+2. IMPERATIVE
+======================================================================
+Sentence:
+Check the timetable.
+
+Parse tree:
+└── S
+    └── VP
+        ├── V
+        │   └── Check
+        └── NP
+            ├── Det
+            │   └── the
+            └── N
+                └── timetable
+
+Bracketed notation:
+(S (VP (V Check) (NP (Det the) (N timetable))))
+
+======================================================================
+3. YES/NO QUESTION
+======================================================================
+Sentence:
+Does the student need the timetable?
+
+Parse tree:
+└── S
+    ├── Aux
+    │   └── Does
+    ├── NP
+    │   ├── Det
+    │   │   └── the
+    │   └── N
+    │       └── student
+    └── VP
+        ├── V
+        │   └── need
+        └── NP
+            ├── Det
+            │   └── the
+            └── N
+                └── timetable
+
+Bracketed notation:
+(S (Aux Does) (NP (Det the) (N student)) (VP (V need) (NP (Det the) (N timetable))))
+
+======================================================================
+4. SUBJECT WH-QUESTION
+======================================================================
+Sentence:
+Who provides the schedule?
+
+Parse tree:
+└── S
+    ├── WhNP
+    │   └── WhPron
+    │       └── Who
+    └── VP
+        ├── V
+        │   └── provides
+        └── NP
+            ├── Det
+            │   └── the
+            └── N
+                └── schedule
+
+Bracketed notation:
+(S (WhNP (WhPron Who)) (VP (V provides) (NP (Det the) (N schedule))))
+
+======================================================================
+5. NON-SUBJECT WH-QUESTION
+======================================================================
+Sentence:
+What information does the student need?
+
+Parse tree:
+└── S
+    ├── WhNP
+    │   ├── WhDet
+    │   │   └── What
+    │   └── N
+    │       └── information
+    ├── Aux
+    │   └── does
+    ├── NP
+    │   ├── Det
+    │   │   └── the
+    │   └── N
+    │       └── student
+    └── VP
+        ├── V
+        │   └── need
+        └── GAP
+            └── t
+
+Bracketed notation:
+(S (WhNP (WhDet What) (N information)) (Aux does) (NP (Det the) (N student)) (VP (V need) (GAP t)))
+
+======================================================================
+6. SUBORDINATE CLAUSE
+======================================================================
+Sentence:
+The student knows that the exam starts.
+
+Parse tree:
+└── S
+    ├── NP
+    │   ├── Det
+    │   │   └── The
+    │   └── N
+    │       └── student
+    └── VP
+        ├── V
+        │   └── knows
+        └── SComp
+            ├── Comp
+            │   └── that
+            └── S
+                ├── NP
+                │   ├── Det
+                │   │   └── the
+                │   └── N
+                │       └── exam
+                └── VP
+                    └── V
+                        └── starts
+
+Bracketed notation:
+(S (NP (Det The) (N student)) (VP (V knows) (SComp (Comp that) (S (NP (Det the) (N exam)) (VP (V starts))))))
+
+======================================================================
+7. RELATIVE CLAUSE
+======================================================================
+Sentence:
+The student who needs the timetable asks the teacher.
+
+Parse tree:
+└── S
+    ├── NP
+    │   ├── Det
+    │   │   └── The
+    │   ├── N
+    │   │   └── student
+    │   └── RelClause
+    │       ├── RelPron
+    │       │   └── who
+    │       └── VP
+    │           ├── V
+    │           │   └── needs
+    │           └── NP
+    │               ├── Det
+    │               │   └── the
+    │               └── N
+    │                   └── timetable
+    └── VP
+        ├── V
+        │   └── asks
+        └── NP
+            ├── Det
+            │   └── the
+            └── N
+                └── teacher
+
+Bracketed notation:
+(S (NP (Det The) (N student) (RelClause (RelPron who) (VP (V needs) (NP (Det the) (N timetable))))) (VP (V asks) (NP (Det the) (N teacher))))
+
+======================================================================
+STRUCTURAL ANALYSIS
+======================================================================
+
+1. Declarative:
+   Normal subject + verb phrase order.
+
+2. Imperative:
+   The subject is normally omitted and the sentence begins
+   with a base-form verb.
+
+3. Yes/No question:
+   The auxiliary moves before the subject.
+
+4. Subject Wh-question:
+   The Wh phrase occupies the subject position.
+
+5. Non-subject Wh-question:
+   The Wh phrase moves to the front and a GAP marks its
+   original object position.
+
+6. Subordinate clause:
+   A complementizer such as 'that' introduces an embedded
+   sentence.
+
+7. Relative clause:
+   A relative pronoun introduces a clause modifying a noun.
+
+8. Coordination:
+   Clauses or phrases can be joined using conjunctions such
+   as 'and' and 'or'.
+
+9. Long-distance dependency:
+   Wh-movement can connect a fronted phrase with a GAP inside
+   an embedded clause. A simple CFG needs additional rules
+   or feature mechanisms to represent this dependency.
+
+======================================================================
+TASK 3 IMPLEMENTATION COMPLETED
+======================================================================

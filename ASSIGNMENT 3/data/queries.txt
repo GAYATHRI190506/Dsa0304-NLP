@@ -1,0 +1,34 @@
+The student needs the timetable.
+The student wants information about the exam.
+The students need the current timetable.
+The professor checks the assignment.
+The university provides the exam schedule.
+The student submits the assignment.
+The student needs a hostel room.
+The student wants the library book.
+The department provides placement information.
+The student checks the examination portal.
+
+Check the timetable.
+Submit the assignment.
+Download the exam form.
+Book a hostel room.
+Check the library schedule.
+View the examination result.
+
+Does the student need the timetable?
+Does the university provide hostel rooms?
+Does the student want the examination form?
+Can the student download the timetable?
+Can the student submit the assignment online?
+
+What is the examination date?
+Which course has the next exam?
+Where is the university library?
+When is the placement interview?
+Why is the examination postponed?
+How can the student apply for a hostel room?
+Who provides the examination schedule?
+Which book does the student need?
+What does the student submit?
+When does the semester start?

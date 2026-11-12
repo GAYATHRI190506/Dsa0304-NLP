@@ -1,0 +1,20 @@
+TASK 5 - ENTROPY, PERPLEXITY AND RECOGNIZER RESCORING
+===========================================================================
+
+Random seed: 42
+Number of hypothesis sets: 200
+Hypotheses per set: 5
+
+LANGUAGE MODEL
+Add-k: 0.1
+Vocabulary: 186
+Entropy: 5.579420
+Cross-entropy: 1.776994
+Perplexity: 3.427113
+
+WER COMPARISON
+Before rescoring: 0.126593
+After rescoring: 0.127307
+Relative improvement: -0.56%
+Perfect before: 0/200
+Perfect after: 0/200

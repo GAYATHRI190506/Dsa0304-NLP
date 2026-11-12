@@ -1,0 +1,82 @@
+===========================================================================
+TASK 12 - DAY-4 CHALLENGE
+===========================================================================
+
+1. CHALLENGE DESCRIPTION
+---------------------------------------------------------------------------
+The Day-4 challenge extends the public-transport domain to metro and intercity rail enquiries. It also introduces code-mixed speech and unseen vocabulary.
+
+The challenge corpus is synthetic and was created as a controlled stress test of the original system.
+
+2. CORPUS STATISTICS
+---------------------------------------------------------------------------
+Training vocabulary size : 184
+Challenge sentences      : 295
+Challenge tokens         : 1690
+Challenge vocabulary     : 156
+Unseen tokens            : 1095
+Unseen word types        : 110
+OOV token rate           : 64.79%
+OOV type rate            : 70.51%
+
+3. REQUIREMENT CHECK
+---------------------------------------------------------------------------
+The challenge satisfies the requirement of more than 15% unseen words.
+
+4. LANGUAGE MODEL IMPACT
+---------------------------------------------------------------------------
+Original development perplexity : 5.2027
+Day-4 challenge perplexity      : 591.6518
+Perplexity change               : +11272.01%
+
+Perplexity increased on the challenge corpus, indicating that unseen vocabulary and code-mixed expressions made prediction more difficult.
+
+5. UNKNOWN-WORD IMPACT
+---------------------------------------------------------------------------
+Unknown tokens : 1095
+Unknown rate   : 64.79%
+Strategy       : Use <UNK> replacement and add-k smoothing for unseen words.
+
+6. CODE-MIXED SPEECH IMPACT
+---------------------------------------------------------------------------
+The challenge contains English words mixed with Hindi and Telugu-style conversational expressions. The original English-only lexical rules are therefore less reliable for these inputs.
+
+Code-mixed expressions such as 'mujhe', 'batao', 'ka', 'kya', 'ekkada', 'vastundi' and 'cheyyali' are treated using an additional FOREIGN/code-mixed category.
+
+7. DESIGN EVALUATION
+---------------------------------------------------------------------------
+Language model decision : MODIFY
+Rule tagger decision     : MODIFY
+
+The original rule-based architecture should not simply be discarded. Its speed and interpretability remain useful, but its vocabulary and lexical rules should be extended for metro terminology and code-mixed expressions.
+
+The language model should retain smoothing/backoff and add explicit unknown-word handling so that unseen words do not receive zero probability.
+
+8. PROPOSED REDESIGN
+---------------------------------------------------------------------------
+RETAIN:
+1. N-gram/backoff language modelling.
+2. Rule-based lexical handling for common transport terms.
+3. HMM sequence modelling as a statistical fallback.
+4. Fixed train/dev/test separation.
+
+MODIFY:
+1. Add metro-specific vocabulary.
+2. Add intercity rail terminology.
+3. Add code-mixed lexical patterns.
+4. Introduce an explicit <UNK> mechanism.
+5. Use suffix/prefix and word-shape features for unknown words.
+6. Expand the training corpus with real conversational data.
+
+REDESIGN IF DEPLOYED ON REAL SPEECH:
+Use a hybrid architecture combining an ASR system, code-mixed language model, vocabulary adaptation, unknown-word handling and statistical POS tagging.
+
+9. FINAL CONCLUSION
+---------------------------------------------------------------------------
+The Day-4 challenge demonstrates that a controlled English-only public-transport system needs adaptation when the domain expands to metro/intercity rail and code-mixed speech.
+
+The preferred solution is therefore to retain the existing architecture but modify the vocabulary, unknown-word handling and tagging rules. A complete redesign is not necessary for the controlled challenge, but a real-world deployment would require a larger multilingual and conversational training corpus.
+
+===========================================================================
+TASK 12 COMPLETED
+===========================================================================

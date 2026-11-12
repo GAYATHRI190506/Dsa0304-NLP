@@ -1,0 +1,51 @@
+TASK 9 - BRILL TRANSFORMATION-BASED TAGGER
+======================================================================
+
+DATASET
+----------------------------------------------------------------------
+Training sentences : 16000
+Test sentences     : 2000
+
+INITIAL ACCURACY
+----------------------------------------------------------------------
+Training accuracy : 99.94%
+Test accuracy     : 99.93%
+
+TRANSFORMATION TEMPLATES
+----------------------------------------------------------------------
+1. Change tag based on previous tag
+2. Change tag based on next tag
+3. Change tag based on previous two tags
+4. Change tag based on next two tags
+5. Change tag based on previous word
+6. Change tag based on next word
+7. Change tag based on current word
+8. Change tag based on previous word + tag
+9. Change tag based on next word + tag
+10. Change tag based on word suffix
+
+LEARNED TRANSFORMATIONS
+----------------------------------------------------------------------
+1. Change NOUN -> VERB when word suffix = ed
+2. Change NOUN -> ADJ when current word = arrival
+3. Change NOUN -> VERB when next word + next tag = ('late', 'ADJ')
+
+ACCURACY CURVE
+----------------------------------------------------------------------
+Initial training accuracy: 99.94%
+After rule 1: 99.98%
+After rule 2: 99.99%
+After rule 3: 100.00%
+
+FINAL PERFORMANCE
+----------------------------------------------------------------------
+Final test accuracy : 100.00%
+Accuracy improvement: 0.07 percentage points
+Rules learned      : 3
+Training time      : 5.71 seconds
+
+ERROR ANALYSIS
+----------------------------------------------------------------------
+
+ERROR EXAMPLES
+----------------------------------------------------------------------

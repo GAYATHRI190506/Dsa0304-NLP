@@ -1,0 +1,18 @@
+TASK 3 - SMOOTHING LANGUAGE MODELS
+======================================================================
+
+Training sentences: 16000
+Development sentences: 2000
+Vocabulary size: 186
+Unique bigrams: 933
+
+MODEL COMPARISON
+MLE: 6.2825
+Add-k (k=0.01): 5.2027
+Add-k (k=0.1): 5.2709
+Add-k (k=0.5): 5.5601
+Add-k (k=1.0): 5.8758
+Good-Turing: 5.6818
+
+Best Add-k: k=0.01
+Best Add-k perplexity: 5.2027

@@ -1,0 +1,54 @@
+TASK 8 - HMM PART-OF-SPEECH TAGGER
+======================================================================
+
+DATASET
+----------------------------------------------------------------------
+Training sentences : 16000
+Test sentences     : 2000
+Vocabulary size    : 184
+Active tags        : 13
+
+TRAINING
+----------------------------------------------------------------------
+Training time      : 0.0735 seconds
+
+TRANSITION PROBABILITY EXAMPLES
+----------------------------------------------------------------------
+P(WHPRON|<START>) = 0.280035
+P(AUX|WHPRON) = 0.516172
+P(VERB|AUX) = 0.000717
+P(PREP|VERB) = 0.479007
+P(PROPN|PREP) = 0.695028
+
+EMISSION PROBABILITY EXAMPLES
+----------------------------------------------------------------------
+P(train|NOUN) = 0.130757
+P(travel|VERB) = 0.265740
+P(the|DET) = 0.437774
+P(hyderabad|PROPN) = 0.046165
+
+DECODING COMPARISON
+----------------------------------------------------------------------
+Unigram baseline accuracy : 27.50%
+Unigram baseline time     : 0.0336 seconds
+Exhaustive demo sentence  : how long is
+Exhaustive best tags      : ('PRON', 'NOUN', 'AUX')
+Exhaustive time           : 0.009641 seconds
+Viterbi accuracy          : 97.61%
+Viterbi time              : 1.7012 seconds
+
+SMOOTHING
+----------------------------------------------------------------------
+Add-one smoothing was used for transition and emission probabilities.
+
+UNKNOWN WORD STRATEGY
+----------------------------------------------------------------------
+Numeric/time expressions -> NUM
+-ing / -ed words -> VERB
+-ly words -> ADV
+Common adjective suffixes -> ADJ
+Otherwise add-one emission smoothing is used.
+
+TRELLIS
+----------------------------------------------------------------------
+Complete Viterbi trellis for the first test sentence is stored separately in results/task8_trellis.txt.

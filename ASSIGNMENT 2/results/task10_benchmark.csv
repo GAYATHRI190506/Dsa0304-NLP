@@ -1,0 +1,4 @@
+Model,Metric,Value,Time_seconds,Memory_MB
+Trigram LM,Perplexity,5.2985,0.0455,0.0
+Rule-based tagger,Accuracy,100.0,0.1031,0.29
+HMM Viterbi,Accuracy,97.61,1.7012,

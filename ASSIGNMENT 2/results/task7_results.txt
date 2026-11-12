@@ -1,0 +1,66 @@
+TASK 7 - RULE-BASED POS TAGGER
+======================================================================
+
+1. APPROACH
+----------------------------------------------------------------------
+The rule-based tagger uses a lexical dictionary followed by ordered linguistic rules. The rules examine punctuation, numbers, time expressions, proper nouns, function words, suffix patterns and finally unknown words.
+
+2. NUMBER OF RULES
+----------------------------------------------------------------------
+Total rules implemented: 23
+
+R1  - punctuation
+R2  - numeric expression
+R3  - time expression
+R4  - city proper noun
+R5  - month/day proper noun
+R6  - WH pronoun
+R7  - WH adverb
+R8  - determiner
+R9  - pronoun
+R10 - modal auxiliary
+R11 - conjunction
+R12 - preposition
+R13 - infinitive TO
+R14 - adjective dictionary
+R15 - adverb dictionary
+R16 - verb dictionary
+R17 - noun dictionary
+R18 - -ing verb suffix
+R19 - -ed verb suffix
+R20 - -ly adverb suffix
+R21 - adjective suffix
+R22 - plural noun suffix
+R23 - unknown-word fallback
+
+3. TEST SET RESULTS
+----------------------------------------------------------------------
+Test sentences       : 2000
+Test tokens          : 16172
+Correct predictions   : 16172
+Incorrect predictions : 0
+Overall accuracy     : 100.00%
+
+4. AMBIGUOUS WORD ACCURACY
+----------------------------------------------------------------------
+Ambiguous test tokens : 0
+Correct ambiguous     : 0
+Ambiguous accuracy    : 0.00%
+
+5. UNKNOWN WORD PERFORMANCE
+----------------------------------------------------------------------
+Unknown test tokens : 0
+Correct unknown     : 0
+Unknown-word accuracy : 0.00%
+
+6. ERROR ANALYSIS
+----------------------------------------------------------------------
+Total errors: 0
+
+Most common error pairs:
+
+7. INTERPRETATION
+----------------------------------------------------------------------
+The rule-based tagger performs well on the controlled public-transport vocabulary because many words have stable grammatical roles. Dictionary rules are particularly useful for city names, transport nouns, function words and modal auxiliaries.
+
+Suffix-based rules provide a fallback for unseen words. However, purely lexical rules have difficulty when a word can have more than one grammatical role depending on context. This motivates the statistical HMM tagger in Task 8.

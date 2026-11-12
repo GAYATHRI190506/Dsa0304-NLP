@@ -1,0 +1,21 @@
+TASK 4 - ADVANCED N-GRAM LANGUAGE MODELS
+===========================================================================
+
+DELETED INTERPOLATION WEIGHTS
+Lambda 1: 0.003300
+Lambda 2: 0.334728
+Lambda 3: 0.661972
+
+DEV-OPTIMIZED LINEAR INTERPOLATION
+Lambda 1: 0.00
+Lambda 2: 0.10
+Lambda 3: 0.90
+
+MODEL COMPARISON
+Katz Backoff: Perplexity=3.508133, Zero events=2
+Stupid Backoff: Perplexity=3.186940, Zero events=2
+Linear Interpolation: Perplexity=3.395254, Zero events=27
+Deleted Interpolation: Perplexity=3.517945, Zero events=2
+
+Best model: Stupid Backoff
+Best perplexity: 3.186940

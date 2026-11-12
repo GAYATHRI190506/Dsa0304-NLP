@@ -1,0 +1,19 @@
+TASK 2 - N-GRAM LANGUAGE MODELS
+======================================================================
+
+Training sentences: 16000
+Vocabulary size: 186
+Unigram observations: 161075
+Unique bigrams: 933
+Unique trigrams: 4271
+Bigram sparsity: 97.3032%
+Trigram sparsity: 99.9336%
+
+Unigram example:
+P(train) = 0.01904703
+
+Bigram example:
+P(train|the) = 0.03792939
+
+Trigram example:
+P(from|the,train) = 0.09433962

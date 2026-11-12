@@ -1,0 +1,144 @@
+HMM VITERBI TRELLIS
+======================================================================
+
+Sentence:
+how long is the trip from warangal to pune
+
+Rows = HMM tags, Columns = word positions.
+Values are best log-probability scores.
+
+WORD POSITION 1: how
+ADJ            -18.2048
+ADV            -17.5953
+AUX            -10.3454
+CONJ           -16.1846
+DET            -18.8490
+NOUN           -13.6119
+NUM            -17.7611
+PREP           -20.0156
+PRON           -10.6929
+PROPN          -19.7318
+VERB           -11.2336
+WHADV           -2.4977
+WHPRON          -9.7230
+
+WORD POSITION 2: long
+ADJ            -16.7271
+ADV            -17.7271
+AUX            -12.8101
+CONJ           -16.3163
+DET            -18.9808
+NOUN            -6.7839
+NUM            -17.8929
+PREP           -20.1474
+PRON           -18.5518
+PROPN          -19.8636
+VERB           -19.0589
+WHADV          -17.2317
+WHPRON         -18.2637
+
+WORD POSITION 3: is
+ADJ            -20.7583
+ADV            -22.0918
+AUX             -9.9066
+CONJ           -18.9613
+DET            -21.1249
+NOUN           -18.6684
+NUM            -24.9198
+PREP           -17.6833
+PRON           -22.8138
+PROPN          -19.9330
+VERB           -19.2924
+WHADV          -24.2587
+WHPRON         -25.2907
+
+WORD POSITION 4: the
+ADJ            -21.4764
+ADV            -19.1884
+AUX            -28.2964
+CONJ           -25.5961
+DET            -11.6318
+NOUN           -25.0964
+NUM            -27.1726
+PREP           -29.4271
+PRON           -19.9104
+PROPN          -28.0971
+VERB           -26.3927
+WHADV          -26.5115
+WHPRON         -27.5435
+
+WORD POSITION 5: trip
+ADJ            -21.2228
+ADV            -28.6955
+AUX            -29.9851
+CONJ           -27.2848
+DET            -28.3896
+NOUN           -15.9594
+NUM            -28.8613
+PREP           -31.1158
+PRON           -29.5202
+PROPN          -30.8320
+VERB           -28.2355
+WHADV          -28.2001
+WHPRON         -29.2322
+
+WORD POSITION 6: from
+ADJ            -29.9338
+ADV            -33.2364
+AUX            -27.7247
+CONJ           -28.1368
+DET            -30.3004
+NOUN           -27.8439
+NUM            -34.0953
+PREP           -17.5080
+PRON           -32.4517
+PROPN          -29.1085
+VERB           -28.4679
+WHADV          -33.4342
+WHPRON         -34.4662
+
+WORD POSITION 7: warangal
+ADJ            -34.9732
+ADV            -31.8380
+AUX            -37.0396
+CONJ           -34.3393
+DET            -34.0080
+NOUN           -29.5498
+NUM            -27.8952
+PREP           -38.1703
+PRON           -35.8816
+PROPN          -20.8883
+VERB           -29.5037
+WHADV          -35.2547
+WHPRON         -36.2867
+
+WORD POSITION 8: to
+ADJ            -39.4542
+ADV            -38.8448
+AUX            -40.1344
+CONJ           -31.4326
+DET            -40.0084
+NOUN           -40.9948
+NUM            -39.0106
+PREP           -22.2807
+PRON           -39.6695
+PROPN          -40.9813
+VERB           -35.3090
+WHADV          -38.3494
+WHPRON         -39.3814
+
+WORD POSITION 9: pune
+ADJ            -39.7459
+ADV            -36.6107
+AUX            -41.8123
+CONJ           -39.1120
+DET            -38.7807
+NOUN           -34.3225
+NUM            -32.6679
+PREP           -42.9430
+PRON           -40.6543
+PROPN          -25.7033
+VERB           -34.2764
+WHADV          -40.0274
+WHPRON         -41.0594
+

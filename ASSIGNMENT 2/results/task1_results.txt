@@ -1,0 +1,26 @@
+TASK 1 - COUNTING WORDS AND BUILDING THE VOCABULARY
+============================================================
+
+TRAINING CORPUS
+Sentences: 16000
+Word tokens: 129075
+Word-form types: 184
+Lemma types: 179
+
+TOKENIZATION DECISIONS
+1. Lowercase normalization
+2. Words separated into tokens
+3. Numbers and times retained
+4. Punctuation handled separately
+5. Apostrophes retained inside words
+
+VOCABULARY THRESHOLDS
+Threshold 1: Vocabulary=184, <UNK> tokens=0, percentage=0.00%
+Threshold 2: Vocabulary=171, <UNK> tokens=13, percentage=0.01%
+Threshold 3: Vocabulary=168, <UNK> tokens=19, percentage=0.01%
+Threshold 5: Vocabulary=161, <UNK> tokens=45, percentage=0.03%
+
+DEVELOPMENT OOV
+Development tokens: 16334
+OOV tokens: 2
+OOV rate: 0.01%

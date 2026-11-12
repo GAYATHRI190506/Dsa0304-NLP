@@ -1,0 +1,6 @@
+Metric,Original System,Day-4 Challenge,Change
+Vocabulary,184,156,-28
+Tokens,129075,1690,-127385
+Perplexity,5.2027,591.6518,+11272.01%
+OOV token rate,0.01%,64.79%,+64.78 percentage points
+Challenge type,Public transport,Metro + intercity + code-mixed,Expanded

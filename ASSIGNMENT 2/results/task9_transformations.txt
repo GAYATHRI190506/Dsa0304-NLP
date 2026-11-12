@@ -1,0 +1,6 @@
+FIRST 10 BRILL TRANSFORMATIONS
+======================================================================
+
+1. Change NOUN -> VERB when word suffix = ed
+2. Change NOUN -> ADJ when current word = arrival
+3. Change NOUN -> VERB when next word + next tag = ('late', 'ADJ')

@@ -1,0 +1,80 @@
+TASK 6 - WORD CLASSES AND TAGGING
+======================================================================
+
+1. CUSTOM TAGSET
+----------------------------------------------------------------------
+Number of custom tags: 22
+
+NOUN         -> PTB: NN/NNS
+PROPN        -> PTB: NNP/NNPS
+VERB         -> PTB: VB/VBD/VBG/VBN/VBP/VBZ
+AUX          -> PTB: MD
+ADJ          -> PTB: JJ/JJR/JJS
+ADV          -> PTB: RB/RBR/RBS
+PRON         -> PTB: PRP/PRP$
+DET          -> PTB: DT
+PREP         -> PTB: IN
+CONJ         -> PTB: CC
+NUM          -> PTB: CD
+WHPRON       -> PTB: WP/WDT
+WHADV        -> PTB: WRB
+TO           -> PTB: TO
+PART         -> PTB: RP
+POSS         -> PTB: POS
+PUNCT        -> PTB: .,:;?!
+INTERJ       -> PTB: UH
+EXIST        -> PTB: EX
+SYM          -> PTB: SYM
+FOREIGN      -> PTB: FW
+UNKNOWN      -> PTB: XX
+
+2. ANNOTATION DATASET
+----------------------------------------------------------------------
+Training tokens available : 129075
+Tokens manually-reviewable : 3000
+Double-tagged tokens       : 500
+
+3. TAG DISTRIBUTION
+----------------------------------------------------------------------
+PROPN           458 ( 15.27%)
+VERB            403 ( 13.43%)
+PREP            368 ( 12.27%)
+NOUN            358 ( 11.93%)
+TO              336 ( 11.20%)
+DET             247 (  8.23%)
+UNKNOWN         192 (  6.40%)
+ADJ             148 (  4.93%)
+PRON            141 (  4.70%)
+WHPRON           87 (  2.90%)
+AUX              68 (  2.27%)
+ADV              67 (  2.23%)
+NUM              65 (  2.17%)
+WHADV            39 (  1.30%)
+CONJ             14 (  0.47%)
+INTERJ            9 (  0.30%)
+
+4. INTER-ANNOTATOR AGREEMENT
+----------------------------------------------------------------------
+Double-tagged tokens : 500
+Agreements           : 482
+Disagreements        : 18
+Agreement percentage : 96.40%
+Cohen's kappa       : 0.9597
+
+5. TAG AMBIGUITY ANALYSIS
+----------------------------------------------------------------------
+Vocabulary items in annotation set : 135
+Ambiguous word types               : 0
+Ambiguous type percentage          : 0.00%
+
+Examples of ambiguous words:
+
+6. INTERPRETATION
+----------------------------------------------------------------------
+The corpus contains public-transport enquiry language, so nouns, verbs, prepositions, determiners and location names occur frequently.
+
+Proper nouns are used for city and location names. Numbers and time expressions are mapped to NUM/CD. Question words are separated into WHPRON and WHADV.
+
+Ambiguity occurs when the same word can perform different grammatical functions depending on context. Examples include words such as 'book', 'train', 'return' and 'can'.
+
+Important note: the corpus is synthetic. The annotation script provides an annotation aid and a simulated independent second annotation pass. For a strict manual annotation claim, the generated annotation file should be reviewed by the student/annotator before submission.

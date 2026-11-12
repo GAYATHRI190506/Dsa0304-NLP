@@ -1,0 +1,110 @@
+===========================================================================
+TASK 11 - MODEL AND TAGGER COMPARISON
+===========================================================================
+
+1. LANGUAGE MODEL COMPARISON
+---------------------------------------------------------------------------
+Model                     Perplexity   Complexity   Manual Effort  
+---------------------------------------------------------------------------
+MLE Bigram                6.2825       Low          Low            
+Add-k (k=0.01)            5.2027       Low          Low            
+Good-Turing               5.6818       Medium       Low            
+Katz Backoff              3.5081       Medium       Low            
+Stupid Backoff            3.1869       Low          Low            
+Linear Interpolation      3.3953       Medium       Low            
+Deleted Interpolation     3.5179       Medium       Low            
+
+BEST LANGUAGE MODEL
+---------------------------------------------------------------------------
+Model      : Stupid Backoff
+Perplexity : 3.1869
+Reason     : It achieved the lowest measured perplexity among the compared language models.
+
+2. POS TAGGER COMPARISON
+---------------------------------------------------------------------------
+Tagger                    Accuracy     Runtime(s)   Complexity   Manual Effort  
+---------------------------------------------------------------------------
+Rule-Based Tagger         100.00       0.1031       Low          Medium         
+HMM Viterbi               97.61        1.7012       Medium       High           
+Brill Tagger              100.00       5.7100       Medium       Medium         
+
+BEST POS TAGGER BY MEASURED ACCURACY
+---------------------------------------------------------------------------
+Model    : Rule-Based Tagger
+Accuracy : 100.00%
+Reason   : It achieved the highest measured test accuracy.
+
+3. RUNTIME COMPARISON
+---------------------------------------------------------------------------
+Rule-based tagger runtime : 0.1031 seconds
+HMM Viterbi runtime       : 1.7012 seconds
+Brill training time       : 5.71 seconds
+
+The rule-based tagger was the fastest measured tagger.
+
+4. MANUAL EFFORT
+---------------------------------------------------------------------------
+Task 6 used a 22-tag custom tagset.
+3,000 tokens were annotated.
+500 tokens were double-tagged for agreement analysis.
+Agreement = 96.40%
+Cohen's kappa = 0.9597
+
+The tagging design therefore required a non-trivial manual annotation effort before statistical taggers could be evaluated.
+
+5. STRENGTHS AND WEAKNESSES
+---------------------------------------------------------------------------
+MLE Bigram:
+  Strength: Simple and easy to calculate.
+  Weakness : High sparsity and zero-probability problem.
+
+Add-k:
+  Strength: Simple smoothing and removes zero probabilities.
+  Weakness : Performance depends on the selected k value.
+
+Good-Turing:
+  Strength: Adjusts probabilities using frequency-of-frequency information.
+  Weakness : More complicated than Add-k.
+
+Katz Backoff:
+  Strength: Uses lower-order models when higher-order evidence is unavailable.
+  Weakness : More implementation complexity.
+
+Stupid Backoff:
+  Strength: Lowest measured perplexity and simple implementation.
+  Weakness : Uses a fixed backoff factor rather than a normalized probability model.
+
+Rule-Based Tagger:
+  Strength: Very fast, interpretable and achieved 100% test accuracy on this corpus.
+  Weakness : Requires manually designed lexical dictionaries and rules.
+
+HMM Viterbi:
+  Strength: Models dependencies between neighbouring tags.
+  Weakness : Slower than the rule-based approach and requires statistical training.
+
+Brill Tagger:
+  Strength: Learns transformations that correct initial tagging errors.
+  Weakness : Training is slower than the rule-based tagger and the initial tagger was already highly accurate on this corpus.
+
+6. FINAL RECOMMENDATION
+---------------------------------------------------------------------------
+Recommended language model: Stupid Backoff
+Measured perplexity: 3.1869
+It achieved the lowest perplexity among the Task 4 models.
+
+Recommended POS tagger for this public-transport corpus: Rule-Based Tagger
+Measured test accuracy: 100.00%
+Measured runtime: 0.1031 seconds
+It provides the best combination of measured accuracy, speed and interpretability for this controlled corpus.
+
+HMM Viterbi is a useful alternative when sequence-based statistical modelling is preferred.
+Brill is useful as a transformation-based correction approach, but its improvement was small because the initial tagger was already highly accurate.
+
+7. LIMITATION
+---------------------------------------------------------------------------
+The corpus is synthetic and highly regular. Therefore, the measured 100% rule-based and Brill accuracy should not be interpreted as evidence that the same performance will occur on unrestricted real-world speech.
+The Day-4 challenge in Task 12 is used to test robustness under more difficult conditions such as unseen vocabulary and code-mixed speech.
+
+===========================================================================
+TASK 11 COMPLETED
+===========================================================================

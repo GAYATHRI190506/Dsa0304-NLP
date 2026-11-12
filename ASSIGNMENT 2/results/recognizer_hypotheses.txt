@@ -1,0 +1,1600 @@
+SET 1
+REFERENCE: does the train run at 7:30
+H1: does the train run at bus
+H2: the train run at 7:30
+H3: does the train run at today 7:30
+H4: does train the run at 7:30
+H5: does ticket train run at 7:30
+
+SET 2
+REFERENCE: how can i travel from trichy to visakhapatnam
+H1: how travel i travel from trichy to visakhapatnam
+H2: how i travel from trichy to visakhapatnam
+H3: how can i travel from trichy train to visakhapatnam
+H4: can how i travel from trichy to visakhapatnam
+H5: how route i travel from trichy to visakhapatnam
+
+SET 3
+REFERENCE: book three tickets from vijayawada to jaipur
+H1: book travel tickets from vijayawada to jaipur
+H2: book three tickets from to jaipur
+H3: available book three tickets from vijayawada to jaipur
+H4: book tickets three from vijayawada to jaipur
+H5: book three tickets from vijayawada travel jaipur
+
+SET 4
+REFERENCE: is there a express bus from salem to kochi
+H1: is there a express bus from route to kochi
+H2: is there a express bus from salem kochi
+H3: is there a express bus from salem to kochi today
+H4: there is a express bus from salem to kochi
+H5: is there today express bus from salem to kochi
+
+SET 5
+REFERENCE: can i travel from mysuru to delhi at 20:00
+H1: can i travel from mysuru fare delhi at 20:00
+H2: can i from mysuru to delhi at 20:00
+H3: can i travel route from mysuru to delhi at 20:00
+H4: can i travel from mysuru delhi to at 20:00
+H5: can bus travel from mysuru to delhi at 20:00
+
+SET 6
+REFERENCE: which route is best from guntur to warangal
+H1: which route is best from guntur bus warangal
+H2: which route is best from to warangal
+H3: which route is best from available guntur to warangal
+H4: which route best is from guntur to warangal
+H5: tomorrow route is best from guntur to warangal
+
+SET 7
+REFERENCE: what are the timings from vellore to nellore
+H1: what today the timings from vellore to nellore
+H2: what the timings from vellore to nellore
+H3: what are the timings from vellore to nellore today
+H4: what are the timings from vellore nellore to
+H5: what are the timings from platform to nellore
+
+SET 8
+REFERENCE: how long is the trip from madurai to chennai
+H1: how long is bus trip from madurai to chennai
+H2: long is the trip from madurai to chennai
+H3: how long is route the trip from madurai to chennai
+H4: how long is the from trip madurai to chennai
+H5: how route is the trip from madurai to chennai
+
+SET 9
+REFERENCE: show me trains from pondicherry to tirupati
+H1: show me trains from pondicherry to bus
+H2: show me trains pondicherry to tirupati
+H3: show me trains from please pondicherry to tirupati
+H4: show me trains from pondicherry tirupati to
+H5: show me trains from pondicherry to station
+
+SET 10
+REFERENCE: how much is the fare from vijayawada to madurai
+H1: how much station the fare from vijayawada to madurai
+H2: how much is the fare vijayawada to madurai
+H3: how much is ticket the fare from vijayawada to madurai
+H4: how much is the from fare vijayawada to madurai
+H5: how platform is the fare from vijayawada to madurai
+
+SET 11
+REFERENCE: how long is the trip from bhopal to pondicherry
+H1: how long travel the trip from bhopal to pondicherry
+H2: how long is trip from bhopal to pondicherry
+H3: how long please is the trip from bhopal to pondicherry
+H4: how long is the trip from to bhopal pondicherry
+H5: how long is the travel from bhopal to pondicherry
+
+SET 12
+REFERENCE: show me trains from visakhapatnam to tirupati
+H1: show station trains from visakhapatnam to tirupati
+H2: show me trains from visakhapatnam to
+H3: bus show me trains from visakhapatnam to tirupati
+H4: me show trains from visakhapatnam to tirupati
+H5: show me trains from visakhapatnam to station
+
+SET 13
+REFERENCE: i need to travel from trichy to visakhapatnam
+H1: i need to travel from trichy fare visakhapatnam
+H2: i to travel from trichy to visakhapatnam
+H3: i need to available travel from trichy to visakhapatnam
+H4: i need to travel from to trichy visakhapatnam
+H5: i need to travel from route to visakhapatnam
+
+SET 14
+REFERENCE: which intercity train leaves jaipur at 8:30
+H1: which intercity train leaves jaipur tomorrow 8:30
+H2: which intercity train jaipur at 8:30
+H3: which intercity train leaves jaipur at 8:30 bus
+H4: which intercity leaves train jaipur at 8:30
+H5: which route train leaves jaipur at 8:30
+
+SET 15
+REFERENCE: how can i travel from tirupati to mumbai
+H1: how can i travel platform tirupati to mumbai
+H2: how can i travel from tirupati mumbai
+H3: how can i travel from tirupati today to mumbai
+H4: how i can travel from tirupati to mumbai
+H5: how can travel travel from tirupati to mumbai
+
+SET 16
+REFERENCE: can i travel from bengaluru to vijayawada at 22:00
+H1: can i travel from bengaluru to vijayawada bus 22:00
+H2: i travel from bengaluru to vijayawada at 22:00
+H3: can bus i travel from bengaluru to vijayawada at 22:00
+H4: can i from travel bengaluru to vijayawada at 22:00
+H5: can i travel from bengaluru to platform at 22:00
+
+SET 17
+REFERENCE: can i travel from vijayawada to madurai at 7:30
+H1: can today travel from vijayawada to madurai at 7:30
+H2: can i travel from vijayawada to at 7:30
+H3: can i travel from vijayawada to madurai at 7:30 please
+H4: can i travel from to vijayawada madurai at 7:30
+H5: can i travel from vijayawada to madurai at train
+
+SET 18
+REFERENCE: is there a train from mysuru to vellore
+H1: is travel a train from mysuru to vellore
+H2: is there a train mysuru to vellore
+H3: is there a train from train mysuru to vellore
+H4: is there train a from mysuru to vellore
+H5: is there a train from mysuru ticket vellore
+
+SET 19
+REFERENCE: is there a morning intercity train to trichy
+H1: is there a morning intercity train to train
+H2: is there a morning train to trichy
+H3: is there a morning intercity train to trichy route
+H4: is a there morning intercity train to trichy
+H5: is fare a morning intercity train to trichy
+
+SET 20
+REFERENCE: which intercity train leaves jaipur at 6:30
+H1: which intercity train leaves jaipur at travel
+H2: which intercity train leaves at 6:30
+H3: which intercity train bus leaves jaipur at 6:30
+H4: which intercity leaves train jaipur at 6:30
+H5: which intercity train leaves jaipur at ticket
+
+SET 21
+REFERENCE: which route is best from tirupati to chennai
+H1: platform route is best from tirupati to chennai
+H2: which route is best from to chennai
+H3: which route is best from tirupati to train chennai
+H4: route which is best from tirupati to chennai
+H5: which route is best from fare to chennai
+
+SET 22
+REFERENCE: can i travel from erode to warangal at 13:00
+H1: can i travel train erode to warangal at 13:00
+H2: can i travel erode to warangal at 13:00
+H3: can i travel from erode to warangal at 13:00 train
+H4: can travel i from erode to warangal at 13:00
+H5: can i travel from erode to warangal bus 13:00
+
+SET 23
+REFERENCE: show me buses from trichy to vijayawada
+H1: show me buses from trichy to travel
+H2: show me buses from trichy to
+H3: show me bus buses from trichy to vijayawada
+H4: show me buses from trichy vijayawada to
+H5: show me buses travel trichy to vijayawada
+
+SET 24
+REFERENCE: i want to book a express bus from visakhapatnam to tirupati
+H1: i want fare book a express bus from visakhapatnam to tirupati
+H2: i want to book a express bus from to tirupati
+H3: i want to book a express bus from visakhapatnam please to tirupati
+H4: i want to a book express bus from visakhapatnam to tirupati
+H5: i want to book a express bus from route to tirupati
+
+SET 25
+REFERENCE: please book a ticket from erode to vijayawada
+H1: please book a ticket today erode to vijayawada
+H2: please book a ticket from to vijayawada
+H3: please book a ticket from erode to available vijayawada
+H4: please book a from ticket erode to vijayawada
+H5: please route a ticket from erode to vijayawada
+
+SET 26
+REFERENCE: show me trains from madurai to pune
+H1: show bus trains from madurai to pune
+H2: show me from madurai to pune
+H3: available show me trains from madurai to pune
+H4: show me trains from to madurai pune
+H5: show platform trains from madurai to pune
+
+SET 27
+REFERENCE: is there a direct route from kochi to chennai
+H1: is there a train route from kochi to chennai
+H2: is a direct route from kochi to chennai
+H3: bus is there a direct route from kochi to chennai
+H4: is a there direct route from kochi to chennai
+H5: station there a direct route from kochi to chennai
+
+SET 28
+REFERENCE: what are the timings from vellore to ahmedabad
+H1: what travel the timings from vellore to ahmedabad
+H2: what are the from vellore to ahmedabad
+H3: what are the timings ticket from vellore to ahmedabad
+H4: what are the from timings vellore to ahmedabad
+H5: what are the travel from vellore to ahmedabad
+
+SET 29
+REFERENCE: how long is the trip from guntur to bengaluru
+H1: how long platform the trip from guntur to bengaluru
+H2: how long is the trip from guntur bengaluru
+H3: how long is route the trip from guntur to bengaluru
+H4: how long is the trip from guntur bengaluru to
+H5: how long is the trip from route to bengaluru
+
+SET 30
+REFERENCE: which train leaves jaipur at 12:00
+H1: bus train leaves jaipur at 12:00
+H2: which train leaves jaipur at
+H3: which train leaves today jaipur at 12:00
+H4: which train leaves at jaipur 12:00
+H5: which train leaves tomorrow at 12:00
+
+SET 31
+REFERENCE: is there a cheaper bus to coimbatore
+H1: is there a cheaper bus to train
+H2: is there a cheaper bus coimbatore
+H3: is train there a cheaper bus to coimbatore
+H4: is there a bus cheaper to coimbatore
+H5: is there a cheaper bus station coimbatore
+
+SET 32
+REFERENCE: is there a cheaper train to warangal
+H1: is there a cheaper train to bus
+H2: is a cheaper train to warangal
+H3: is there a bus cheaper train to warangal
+H4: is there a cheaper to train warangal
+H5: is there a ticket train to warangal
+
+SET 33
+REFERENCE: what is the distance between vellore and kochi
+H1: what is the distance between vellore ticket kochi
+H2: what is the distance vellore and kochi
+H3: what is the distance between vellore and bus kochi
+H4: what is the distance between vellore kochi and
+H5: what tomorrow the distance between vellore and kochi
+
+SET 34
+REFERENCE: book three tickets from bhopal to warangal
+H1: book three tickets from bhopal to travel
+H2: three tickets from bhopal to warangal
+H3: ticket book three tickets from bhopal to warangal
+H4: book three tickets from to bhopal warangal
+H5: book three tickets from bhopal to train
+
+SET 35
+REFERENCE: does the train run at 9:00
+H1: route the train run at 9:00
+H2: does train run at 9:00
+H3: does the train please run at 9:00
+H4: does the train at run 9:00
+H5: does today train run at 9:00
+
+SET 36
+REFERENCE: how much is the fare from delhi to mumbai
+H1: ticket much is the fare from delhi to mumbai
+H2: how much is the fare from to mumbai
+H3: please how much is the fare from delhi to mumbai
+H4: how much is the from fare delhi to mumbai
+H5: how much is the fare from delhi fare mumbai
+
+SET 37
+REFERENCE: is there a intercity train from trichy to mysuru
+H1: is there a intercity train from travel to mysuru
+H2: is there a intercity train from trichy mysuru
+H3: is there bus a intercity train from trichy to mysuru
+H4: is there a intercity from train trichy to mysuru
+H5: is there a train train from trichy to mysuru
+
+SET 38
+REFERENCE: i want to book a local train from mysuru to coimbatore
+H1: i want to book a local train from mysuru travel coimbatore
+H2: want to book a local train from mysuru to coimbatore
+H3: i want to book a local train from mysuru to coimbatore today
+H4: want i to book a local train from mysuru to coimbatore
+H5: platform want to book a local train from mysuru to coimbatore
+
+SET 39
+REFERENCE: which intercity train leaves bhopal at 22:00
+H1: which intercity train travel bhopal at 22:00
+H2: which intercity train leaves bhopal at
+H3: which intercity train train leaves bhopal at 22:00
+H4: which intercity train leaves at bhopal 22:00
+H5: ticket intercity train leaves bhopal at 22:00
+
+SET 40
+REFERENCE: when is the next local train to pune
+H1: when platform the next local train to pune
+H2: when the next local train to pune
+H3: when is the please next local train to pune
+H4: is when the next local train to pune
+H5: when is the platform local train to pune
+
+SET 41
+REFERENCE: how much is the fare from kochi to salem
+H1: platform much is the fare from kochi to salem
+H2: how is the fare from kochi to salem
+H3: how much is the fare from ticket kochi to salem
+H4: how much is the fare kochi from to salem
+H5: how much is the route from kochi to salem
+
+SET 42
+REFERENCE: can i travel from jaipur to erode at 20:00
+H1: can i travel from jaipur route erode at 20:00
+H2: can i travel from to erode at 20:00
+H3: can i travel from jaipur to bus erode at 20:00
+H4: can i travel from to jaipur erode at 20:00
+H5: can i travel from jaipur to erode station 20:00
+
+SET 43
+REFERENCE: is there a morning train to trichy
+H1: is there a morning train to bus
+H2: there a morning train to trichy
+H3: is there a morning train to trichy available
+H4: is there a morning to train trichy
+H5: bus there a morning train to trichy
+
+SET 44
+REFERENCE: does the intercity train run on thursday
+H1: does the intercity train route on thursday
+H2: does the intercity train on thursday
+H3: does the intercity train bus run on thursday
+H4: does the train intercity run on thursday
+H5: route the intercity train run on thursday
+
+SET 45
+REFERENCE: how much is the fare from trichy to vellore
+H1: how much is the fare fare trichy to vellore
+H2: how much the fare from trichy to vellore
+H3: how much is the fare from trichy route to vellore
+H4: how much is the from fare trichy to vellore
+H5: how much is the fare from trichy to train
+
+SET 46
+REFERENCE: is there an evening intercity train to ahmedabad
+H1: is there an evening bus train to ahmedabad
+H2: is there evening intercity train to ahmedabad
+H3: is there an evening train intercity train to ahmedabad
+H4: there is an evening intercity train to ahmedabad
+H5: is there fare evening intercity train to ahmedabad
+
+SET 47
+REFERENCE: does the train stop at tirupati
+H1: does the platform stop at tirupati
+H2: does train stop at tirupati
+H3: does the train stop at today tirupati
+H4: does train the stop at tirupati
+H5: does the train stop at fare
+
+SET 48
+REFERENCE: which express bus leaves mumbai at 10:00
+H1: which express bus leaves tomorrow at 10:00
+H2: which express leaves mumbai at 10:00
+H3: train which express bus leaves mumbai at 10:00
+H4: which express bus leaves mumbai 10:00 at
+H5: which express bus fare mumbai at 10:00
+
+SET 49
+REFERENCE: is there a direct intercity train to tirupati
+H1: train there a direct intercity train to tirupati
+H2: is there a direct intercity to tirupati
+H3: is there ticket a direct intercity train to tirupati
+H4: is there direct a intercity train to tirupati
+H5: is there tomorrow direct intercity train to tirupati
+
+SET 50
+REFERENCE: is there a local train from bhopal to nellore
+H1: is there a local train from bhopal to today
+H2: is there a local train from bhopal to
+H3: train is there a local train from bhopal to nellore
+H4: is a there local train from bhopal to nellore
+H5: is there travel local train from bhopal to nellore
+
+SET 51
+REFERENCE: does this metro stop at bengaluru
+H1: station this metro stop at bengaluru
+H2: does this metro stop bengaluru
+H3: does this metro stop bus at bengaluru
+H4: does this metro at stop bengaluru
+H5: does train metro stop at bengaluru
+
+SET 52
+REFERENCE: is there a cheaper express bus to salem
+H1: is there a cheaper station bus to salem
+H2: there a cheaper express bus to salem
+H3: is there a cheaper express bus bus to salem
+H4: is there a cheaper express to bus salem
+H5: is there a bus express bus to salem
+
+SET 53
+REFERENCE: how can i travel from guntur to nellore
+H1: how can i travel from travel to nellore
+H2: how can i travel from guntur nellore
+H3: how can bus i travel from guntur to nellore
+H4: how can i travel from guntur nellore to
+H5: how can ticket travel from guntur to nellore
+
+SET 54
+REFERENCE: i want to book a train from visakhapatnam to coimbatore
+H1: i want to book a train train visakhapatnam to coimbatore
+H2: i want book a train from visakhapatnam to coimbatore
+H3: i want to book a route train from visakhapatnam to coimbatore
+H4: i want to book a train visakhapatnam from to coimbatore
+H5: i want to fare a train from visakhapatnam to coimbatore
+
+SET 55
+REFERENCE: i want to book a train from coimbatore to ahmedabad
+H1: i want bus book a train from coimbatore to ahmedabad
+H2: i want to book a train coimbatore to ahmedabad
+H3: route i want to book a train from coimbatore to ahmedabad
+H4: i want to book a train from to coimbatore ahmedabad
+H5: i want to route a train from coimbatore to ahmedabad
+
+SET 56
+REFERENCE: how much is the fare from guntur to ahmedabad
+H1: how much is the fare from guntur station ahmedabad
+H2: how much is the from guntur to ahmedabad
+H3: how much is bus the fare from guntur to ahmedabad
+H4: much how is the fare from guntur to ahmedabad
+H5: how much is today fare from guntur to ahmedabad
+
+SET 57
+REFERENCE: when does the express bus from coimbatore arrive
+H1: when does the express bus fare coimbatore arrive
+H2: when the express bus from coimbatore arrive
+H3: when does the express today bus from coimbatore arrive
+H4: when does the express bus coimbatore from arrive
+H5: when does the express bus from travel arrive
+
+SET 58
+REFERENCE: can i travel from jaipur to chennai at 7:00
+H1: can i travel from jaipur train chennai at 7:00
+H2: can travel from jaipur to chennai at 7:00
+H3: can i travel from bus jaipur to chennai at 7:00
+H4: can i travel from to jaipur chennai at 7:00
+H5: bus i travel from jaipur to chennai at 7:00
+
+SET 59
+REFERENCE: can i travel from bhopal to trichy at 21:30
+H1: can i travel from bhopal to station at 21:30
+H2: can i travel from bhopal trichy at 21:30
+H3: can i travel from bhopal to available trichy at 21:30
+H4: can travel i from bhopal to trichy at 21:30
+H5: can i travel from bhopal to platform at 21:30
+
+SET 60
+REFERENCE: which express bus leaves guntur at 10:00
+H1: which fare bus leaves guntur at 10:00
+H2: express bus leaves guntur at 10:00
+H3: which express bus leaves guntur at train 10:00
+H4: which express bus leaves at guntur 10:00
+H5: which express bus leaves guntur at travel
+
+SET 61
+REFERENCE: how much is the fare from hyderabad to jaipur
+H1: how much is station fare from hyderabad to jaipur
+H2: how much is the fare from to jaipur
+H3: how ticket much is the fare from hyderabad to jaipur
+H4: how much is the fare hyderabad from to jaipur
+H5: how much is the fare bus hyderabad to jaipur
+
+SET 62
+REFERENCE: is there a night train to erode
+H1: is there a night train fare erode
+H2: is there a night to erode
+H3: is there a night ticket train to erode
+H4: is there a train night to erode
+H5: is there today night train to erode
+
+SET 63
+REFERENCE: does the local train run at 6:00
+H1: does the local train run fare 6:00
+H2: does the local train at 6:00
+H3: does the bus local train run at 6:00
+H4: does the local run train at 6:00
+H5: does the local train run today 6:00
+
+SET 64
+REFERENCE: show me buses from chennai to visakhapatnam
+H1: show me buses from chennai ticket visakhapatnam
+H2: show me buses from to visakhapatnam
+H3: show me buses from please chennai to visakhapatnam
+H4: show me buses from to chennai visakhapatnam
+H5: show me buses from chennai to train
+
+SET 65
+REFERENCE: how long is the trip from madurai to pune
+H1: how long is the fare from madurai to pune
+H2: how long is trip from madurai to pune
+H3: how long is the trip from route madurai to pune
+H4: how long is the trip madurai from to pune
+H5: how long is the trip from madurai tomorrow pune
+
+SET 66
+REFERENCE: i want to book a local train from mysuru to visakhapatnam
+H1: i want to book a local train route mysuru to visakhapatnam
+H2: i want to book a local train from to visakhapatnam
+H3: i want to book a local train route from mysuru to visakhapatnam
+H4: i want book to a local train from mysuru to visakhapatnam
+H5: i want to book a local train from mysuru to bus
+
+SET 67
+REFERENCE: how much is the fare from tirupati to vijayawada
+H1: how much is the travel from tirupati to vijayawada
+H2: how much is the fare tirupati to vijayawada
+H3: how route much is the fare from tirupati to vijayawada
+H4: how much is fare the from tirupati to vijayawada
+H5: how much is the route from tirupati to vijayawada
+
+SET 68
+REFERENCE: i want to book a intercity train from salem to mumbai
+H1: i want to ticket a intercity train from salem to mumbai
+H2: want to book a intercity train from salem to mumbai
+H3: bus i want to book a intercity train from salem to mumbai
+H4: i want to book a intercity train salem from to mumbai
+H5: i want to book a intercity train from salem bus mumbai
+
+SET 69
+REFERENCE: show me trains from kochi to vijayawada
+H1: show me trains today kochi to vijayawada
+H2: show me trains from kochi vijayawada
+H3: show me trains ticket from kochi to vijayawada
+H4: show me trains from kochi vijayawada to
+H5: show me trains tomorrow kochi to vijayawada
+
+SET 70
+REFERENCE: what is the ticket price from hyderabad to pune
+H1: what is the ticket price from route to pune
+H2: what is ticket price from hyderabad to pune
+H3: route what is the ticket price from hyderabad to pune
+H4: what the is ticket price from hyderabad to pune
+H5: what is the ticket price from route to pune
+
+SET 71
+REFERENCE: which metro leaves pondicherry at 7:30
+H1: which travel leaves pondicherry at 7:30
+H2: which metro leaves at 7:30
+H3: available which metro leaves pondicherry at 7:30
+H4: which leaves metro pondicherry at 7:30
+H5: tomorrow metro leaves pondicherry at 7:30
+
+SET 72
+REFERENCE: what is the route from pondicherry to coimbatore
+H1: what is tomorrow route from pondicherry to coimbatore
+H2: what is the route from to coimbatore
+H3: what is the route from pondicherry to available coimbatore
+H4: what is the route from pondicherry coimbatore to
+H5: what is the route from pondicherry travel coimbatore
+
+SET 73
+REFERENCE: is there a express bus from bhopal to pondicherry
+H1: is there a express bus from bhopal ticket pondicherry
+H2: is there a express bus from bhopal pondicherry
+H3: is there a express bus from bhopal today to pondicherry
+H4: is there a bus express from bhopal to pondicherry
+H5: is there a express travel from bhopal to pondicherry
+
+SET 74
+REFERENCE: which route is best from madurai to tirupati
+H1: which route is best from madurai to route
+H2: which route is best madurai to tirupati
+H3: which route is best from madurai to train tirupati
+H4: which route is best from to madurai tirupati
+H5: which route is best route madurai to tirupati
+
+SET 75
+REFERENCE: which route is best from warangal to vellore
+H1: which route is best station warangal to vellore
+H2: which route is best from to vellore
+H3: which route is best from warangal to vellore train
+H4: which is route best from warangal to vellore
+H5: which route route best from warangal to vellore
+
+SET 76
+REFERENCE: show me trains from coimbatore to mumbai
+H1: show me trains ticket coimbatore to mumbai
+H2: show me trains from coimbatore mumbai
+H3: show me trains train from coimbatore to mumbai
+H4: show me trains coimbatore from to mumbai
+H5: show me trains station coimbatore to mumbai
+
+SET 77
+REFERENCE: i want to book a express bus from pondicherry to coimbatore
+H1: i want to book a express bus from tomorrow to coimbatore
+H2: i want to book a express from pondicherry to coimbatore
+H3: bus i want to book a express bus from pondicherry to coimbatore
+H4: i want to book a express from bus pondicherry to coimbatore
+H5: i want to book a express platform from pondicherry to coimbatore
+
+SET 78
+REFERENCE: what are the timings from kochi to vijayawada
+H1: platform are the timings from kochi to vijayawada
+H2: what are the timings from kochi vijayawada
+H3: what are the timings from kochi to train vijayawada
+H4: what are timings the from kochi to vijayawada
+H5: what are the timings today kochi to vijayawada
+
+SET 79
+REFERENCE: book three tickets from vellore to mumbai
+H1: book three tickets from vellore to today
+H2: book three tickets from to mumbai
+H3: book three tickets please from vellore to mumbai
+H4: book tickets three from vellore to mumbai
+H5: book three today from vellore to mumbai
+
+SET 80
+REFERENCE: book two tickets from visakhapatnam to warangal
+H1: book two tickets train visakhapatnam to warangal
+H2: book two tickets visakhapatnam to warangal
+H3: book two tickets from visakhapatnam ticket to warangal
+H4: book two tickets from visakhapatnam warangal to
+H5: book two tickets from visakhapatnam to today
+
+SET 81
+REFERENCE: is there a bus from warangal to mumbai
+H1: is there tomorrow bus from warangal to mumbai
+H2: is there bus from warangal to mumbai
+H3: is there a bus from warangal to mumbai train
+H4: is there a from bus warangal to mumbai
+H5: bus there a bus from warangal to mumbai
+
+SET 82
+REFERENCE: is there a local train from mysuru to delhi
+H1: is there a local train from ticket to delhi
+H2: is there a local train from mysuru delhi
+H3: is there train a local train from mysuru to delhi
+H4: is there a local from train mysuru to delhi
+H5: is there a local train from station to delhi
+
+SET 83
+REFERENCE: please book a ticket from mumbai to delhi
+H1: please book a tomorrow from mumbai to delhi
+H2: please book a ticket from to delhi
+H3: please book a ticket from route mumbai to delhi
+H4: please book a from ticket mumbai to delhi
+H5: please book a ticket today mumbai to delhi
+
+SET 84
+REFERENCE: is there an evening intercity train to chennai
+H1: is there an evening bus train to chennai
+H2: is there an evening intercity train to
+H3: ticket is there an evening intercity train to chennai
+H4: is there an evening train intercity to chennai
+H5: station there an evening intercity train to chennai
+
+SET 85
+REFERENCE: what is the route from delhi to guntur
+H1: what is the bus from delhi to guntur
+H2: is the route from delhi to guntur
+H3: bus what is the route from delhi to guntur
+H4: what the is route from delhi to guntur
+H5: platform is the route from delhi to guntur
+
+SET 86
+REFERENCE: how long is the trip from erode to delhi
+H1: how long route the trip from erode to delhi
+H2: how long the trip from erode to delhi
+H3: how long is the trip from erode ticket to delhi
+H4: how is long the trip from erode to delhi
+H5: how long is tomorrow trip from erode to delhi
+
+SET 87
+REFERENCE: i need a bus to mumbai
+H1: i need a bus to fare
+H2: i need bus to mumbai
+H3: i available need a bus to mumbai
+H4: i need a bus mumbai to
+H5: i need a bus to bus
+
+SET 88
+REFERENCE: where is the local train stand at kanchipuram
+H1: where is fare local train stand at kanchipuram
+H2: where the local train stand at kanchipuram
+H3: today where is the local train stand at kanchipuram
+H4: where is the local stand train at kanchipuram
+H5: where is the local train stand today kanchipuram
+
+SET 89
+REFERENCE: is there a intercity train from tirupati to hyderabad
+H1: is there a bus train from tirupati to hyderabad
+H2: is there a train from tirupati to hyderabad
+H3: is ticket there a intercity train from tirupati to hyderabad
+H4: is there a intercity from train tirupati to hyderabad
+H5: is platform a intercity train from tirupati to hyderabad
+
+SET 90
+REFERENCE: what is the distance between warangal and salem
+H1: station is the distance between warangal and salem
+H2: what is the distance between warangal salem
+H3: what is the distance between train warangal and salem
+H4: what is the distance warangal between and salem
+H5: what is the distance between train and salem
+
+SET 91
+REFERENCE: how long is the trip from kochi to ahmedabad
+H1: how long is the trip from tomorrow to ahmedabad
+H2: how is the trip from kochi to ahmedabad
+H3: how long is the trip from today kochi to ahmedabad
+H4: how long is the trip from kochi ahmedabad to
+H5: how long today the trip from kochi to ahmedabad
+
+SET 92
+REFERENCE: is there a metro from nellore to pune
+H1: is there travel metro from nellore to pune
+H2: is there a metro nellore to pune
+H3: is there a metro from nellore to pune route
+H4: is there a from metro nellore to pune
+H5: is there a metro from nellore to today
+
+SET 93
+REFERENCE: i need to travel from visakhapatnam to coimbatore
+H1: i need to travel station visakhapatnam to coimbatore
+H2: i need to from visakhapatnam to coimbatore
+H3: i today need to travel from visakhapatnam to coimbatore
+H4: i need to from travel visakhapatnam to coimbatore
+H5: i need to tomorrow from visakhapatnam to coimbatore
+
+SET 94
+REFERENCE: what time does the intercity train leave nellore
+H1: what time does the intercity train station nellore
+H2: time does the intercity train leave nellore
+H3: what time does the intercity train leave route nellore
+H4: what time the does intercity train leave nellore
+H5: what time tomorrow the intercity train leave nellore
+
+SET 95
+REFERENCE: can i travel from pondicherry to vijayawada at 17:30
+H1: can i travel station pondicherry to vijayawada at 17:30
+H2: can i travel from to vijayawada at 17:30
+H3: can i travel from pondicherry today to vijayawada at 17:30
+H4: can i travel from to pondicherry vijayawada at 17:30
+H5: can i travel from pondicherry to vijayawada at train
+
+SET 96
+REFERENCE: which metro leaves chennai at 19:30
+H1: which metro leaves chennai route 19:30
+H2: metro leaves chennai at 19:30
+H3: which ticket metro leaves chennai at 19:30
+H4: which metro leaves at chennai 19:30
+H5: which metro leaves travel at 19:30
+
+SET 97
+REFERENCE: what is the distance between pondicherry and tirupati
+H1: what is the tomorrow between pondicherry and tirupati
+H2: what is the distance between pondicherry and
+H3: what is the distance between pondicherry and route tirupati
+H4: is what the distance between pondicherry and tirupati
+H5: what fare the distance between pondicherry and tirupati
+
+SET 98
+REFERENCE: what are the timings from vellore to madurai
+H1: what are the today from vellore to madurai
+H2: what are the from vellore to madurai
+H3: what are the timings ticket from vellore to madurai
+H4: what are the timings vellore from to madurai
+H5: what are the timings from tomorrow to madurai
+
+SET 99
+REFERENCE: what is the route from madurai to kochi
+H1: what is the route from today to kochi
+H2: what is the route from to kochi
+H3: what is the route from ticket madurai to kochi
+H4: what is the from route madurai to kochi
+H5: what is the route fare madurai to kochi
+
+SET 100
+REFERENCE: can i travel from delhi to visakhapatnam at 7:30
+H1: can i travel from route to visakhapatnam at 7:30
+H2: can travel from delhi to visakhapatnam at 7:30
+H3: can i travel today from delhi to visakhapatnam at 7:30
+H4: can travel i from delhi to visakhapatnam at 7:30
+H5: can i travel from delhi to visakhapatnam at ticket
+
+SET 101
+REFERENCE: show me trains from mumbai to tirupati
+H1: show route trains from mumbai to tirupati
+H2: show me trains from mumbai tirupati
+H3: show me trains from mumbai to tirupati today
+H4: show me trains from mumbai tirupati to
+H5: show me trains from travel to tirupati
+
+SET 102
+REFERENCE: how many tickets are available
+H1: how many tickets are fare
+H2: many tickets are available
+H3: how today many tickets are available
+H4: how tickets many are available
+H5: how many ticket are available
+
+SET 103
+REFERENCE: how much is the fare from bengaluru to jaipur
+H1: how much is the train from bengaluru to jaipur
+H2: how much is the fare from bengaluru to
+H3: how much today is the fare from bengaluru to jaipur
+H4: much how is the fare from bengaluru to jaipur
+H5: travel much is the fare from bengaluru to jaipur
+
+SET 104
+REFERENCE: can i travel from nellore to trichy at 18:00
+H1: can i travel from ticket to trichy at 18:00
+H2: can i travel from nellore to trichy 18:00
+H3: can route i travel from nellore to trichy at 18:00
+H4: i can travel from nellore to trichy at 18:00
+H5: can i travel from tomorrow to trichy at 18:00
+
+SET 105
+REFERENCE: is there a cheaper intercity train to pune
+H1: is there a cheaper intercity train to tomorrow
+H2: is there a cheaper intercity to pune
+H3: is there train a cheaper intercity train to pune
+H4: is there cheaper a intercity train to pune
+H5: is there a cheaper intercity train to bus
+
+SET 106
+REFERENCE: i want to travel to madurai on sunday
+H1: i today to travel to madurai on sunday
+H2: i want to travel to madurai on
+H3: i available want to travel to madurai on sunday
+H4: i want to travel to on madurai sunday
+H5: ticket want to travel to madurai on sunday
+
+SET 107
+REFERENCE: what are the timings from visakhapatnam to erode
+H1: what are platform timings from visakhapatnam to erode
+H2: what are the timings visakhapatnam to erode
+H3: what bus are the timings from visakhapatnam to erode
+H4: are what the timings from visakhapatnam to erode
+H5: what are the timings from visakhapatnam platform erode
+
+SET 108
+REFERENCE: show me buses from pune to nellore
+H1: show me buses from platform to nellore
+H2: show buses from pune to nellore
+H3: show me buses from pune to please nellore
+H4: show me buses pune from to nellore
+H5: show me platform from pune to nellore
+
+SET 109
+REFERENCE: i need to travel from warangal to mumbai
+H1: i need to travel from warangal fare mumbai
+H2: need to travel from warangal to mumbai
+H3: i route need to travel from warangal to mumbai
+H4: i to need travel from warangal to mumbai
+H5: i need to fare from warangal to mumbai
+
+SET 110
+REFERENCE: i want to book a local train from pune to erode
+H1: i want to book a local train from pune to bus
+H2: i want book a local train from pune to erode
+H3: i want to bus book a local train from pune to erode
+H4: i want to book a local train from to pune erode
+H5: i ticket to book a local train from pune to erode
+
+SET 111
+REFERENCE: give me the schedule for trichy
+H1: today me the schedule for trichy
+H2: give me the for trichy
+H3: give me the schedule for available trichy
+H4: give me the for schedule trichy
+H5: give me train schedule for trichy
+
+SET 112
+REFERENCE: where is the local train stand at coimbatore
+H1: where is the fare train stand at coimbatore
+H2: where is the local stand at coimbatore
+H3: where is the local train stand at train coimbatore
+H4: where is the local train at stand coimbatore
+H5: where is the fare train stand at coimbatore
+
+SET 113
+REFERENCE: which intercity train leaves bengaluru at 6:30
+H1: which intercity train leaves bengaluru at platform
+H2: which intercity train leaves bengaluru 6:30
+H3: which intercity train please leaves bengaluru at 6:30
+H4: intercity which train leaves bengaluru at 6:30
+H5: which intercity train leaves route at 6:30
+
+SET 114
+REFERENCE: can i reserve a seat from guntur to erode
+H1: can i fare a seat from guntur to erode
+H2: can i a seat from guntur to erode
+H3: can train i reserve a seat from guntur to erode
+H4: can i a reserve seat from guntur to erode
+H5: can i reserve a platform from guntur to erode
+
+SET 115
+REFERENCE: does the metro stop at nellore
+H1: does the metro stop at platform
+H2: does the stop at nellore
+H3: does the metro train stop at nellore
+H4: does the metro at stop nellore
+H5: does the metro stop at fare
+
+SET 116
+REFERENCE: i need to travel from nellore to vijayawada
+H1: i need to travel from nellore fare vijayawada
+H2: i need to travel from nellore to
+H3: i need to travel from nellore to train vijayawada
+H4: i need to travel nellore from to vijayawada
+H5: today need to travel from nellore to vijayawada
+
+SET 117
+REFERENCE: what is the route from chennai to trichy
+H1: what is the route from platform to trichy
+H2: what is the route chennai to trichy
+H3: train what is the route from chennai to trichy
+H4: what the is route from chennai to trichy
+H5: fare is the route from chennai to trichy
+
+SET 118
+REFERENCE: i want to book a train from nellore to jaipur
+H1: i want to book a train from nellore to train
+H2: i want book a train from nellore to jaipur
+H3: i want to book a train from available nellore to jaipur
+H4: i want to book a train from to nellore jaipur
+H5: i want to book ticket train from nellore to jaipur
+
+SET 119
+REFERENCE: what are the timings from trichy to nellore
+H1: what are the timings from trichy tomorrow nellore
+H2: what the timings from trichy to nellore
+H3: what are the timings from trichy to today nellore
+H4: what are the from timings trichy to nellore
+H5: what are the timings from station to nellore
+
+SET 120
+REFERENCE: which bus leaves vellore at 7:00
+H1: which bus leaves vellore at bus
+H2: which leaves vellore at 7:00
+H3: which bus please leaves vellore at 7:00
+H4: which bus leaves at vellore 7:00
+H5: which bus today vellore at 7:00
+
+SET 121
+REFERENCE: what is the route from erode to pune
+H1: tomorrow is the route from erode to pune
+H2: what the route from erode to pune
+H3: what is the route from today erode to pune
+H4: what is route the from erode to pune
+H5: what today the route from erode to pune
+
+SET 122
+REFERENCE: what time does the train leave jaipur
+H1: what time does the train leave travel
+H2: what time does the train leave
+H3: ticket what time does the train leave jaipur
+H4: what time does the leave train jaipur
+H5: what time does today train leave jaipur
+
+SET 123
+REFERENCE: what are the timings from warangal to visakhapatnam
+H1: route are the timings from warangal to visakhapatnam
+H2: what are the timings from to visakhapatnam
+H3: what are the timings from warangal to ticket visakhapatnam
+H4: what are the from timings warangal to visakhapatnam
+H5: route are the timings from warangal to visakhapatnam
+
+SET 124
+REFERENCE: book three tickets from delhi to visakhapatnam
+H1: book three travel from delhi to visakhapatnam
+H2: book tickets from delhi to visakhapatnam
+H3: book three tickets from please delhi to visakhapatnam
+H4: book three tickets from delhi visakhapatnam to
+H5: book three tickets bus delhi to visakhapatnam
+
+SET 125
+REFERENCE: which express bus leaves hyderabad at 8:00
+H1: platform express bus leaves hyderabad at 8:00
+H2: which express bus leaves hyderabad at
+H3: which express bus ticket leaves hyderabad at 8:00
+H4: which bus express leaves hyderabad at 8:00
+H5: which express travel leaves hyderabad at 8:00
+
+SET 126
+REFERENCE: how long does the journey to vijayawada take
+H1: travel long does the journey to vijayawada take
+H2: how long does the journey to take
+H3: how bus long does the journey to vijayawada take
+H4: how long does the journey to take vijayawada
+H5: how tomorrow does the journey to vijayawada take
+
+SET 127
+REFERENCE: i want to book a bus from salem to pondicherry
+H1: i ticket to book a bus from salem to pondicherry
+H2: i want to book a bus from to pondicherry
+H3: i want to book available a bus from salem to pondicherry
+H4: i want to book bus a from salem to pondicherry
+H5: i want to book a bus tomorrow salem to pondicherry
+
+SET 128
+REFERENCE: please book a ticket from vijayawada to madurai
+H1: please book a ticket from vijayawada to route
+H2: please book a ticket from vijayawada to
+H3: please book a ticket from vijayawada to madurai bus
+H4: please book a from ticket vijayawada to madurai
+H5: please book a platform from vijayawada to madurai
+
+SET 129
+REFERENCE: give me the train schedule from visakhapatnam
+H1: give me the train ticket from visakhapatnam
+H2: give me the train schedule from
+H3: give today me the train schedule from visakhapatnam
+H4: give me the schedule train from visakhapatnam
+H5: give me travel train schedule from visakhapatnam
+
+SET 130
+REFERENCE: what is the route from jaipur to pondicherry
+H1: what is the route train jaipur to pondicherry
+H2: what is the route jaipur to pondicherry
+H3: what is the route route from jaipur to pondicherry
+H4: what is the route jaipur from to pondicherry
+H5: what is the route from jaipur to ticket
+
+SET 131
+REFERENCE: which express bus leaves ahmedabad at 7:30
+H1: which express bus travel ahmedabad at 7:30
+H2: which express bus ahmedabad at 7:30
+H3: which express bus leaves ahmedabad today at 7:30
+H4: which express bus leaves at ahmedabad 7:30
+H5: which express bus leaves ahmedabad at travel
+
+SET 132
+REFERENCE: can i travel from mumbai to visakhapatnam at 7:30
+H1: can i travel from mumbai to tomorrow at 7:30
+H2: can i travel from mumbai visakhapatnam at 7:30
+H3: can i travel ticket from mumbai to visakhapatnam at 7:30
+H4: can i travel mumbai from to visakhapatnam at 7:30
+H5: can i travel from mumbai to route at 7:30
+
+SET 133
+REFERENCE: what are the timings from jaipur to kochi
+H1: what are the timings from jaipur train kochi
+H2: what are the timings from to kochi
+H3: what are the timings from jaipur to ticket kochi
+H4: what are the timings from jaipur kochi to
+H5: what are the timings from jaipur today kochi
+
+SET 134
+REFERENCE: which express bus leaves delhi at 12:00
+H1: which express bus leaves delhi ticket 12:00
+H2: which express bus delhi at 12:00
+H3: bus which express bus leaves delhi at 12:00
+H4: which express bus leaves at delhi 12:00
+H5: which express bus leaves station at 12:00
+
+SET 135
+REFERENCE: what is the ticket price from visakhapatnam to warangal
+H1: what tomorrow the ticket price from visakhapatnam to warangal
+H2: what the ticket price from visakhapatnam to warangal
+H3: what is the ticket price from visakhapatnam to please warangal
+H4: is what the ticket price from visakhapatnam to warangal
+H5: what is today ticket price from visakhapatnam to warangal
+
+SET 136
+REFERENCE: is there a local train from tirupati to delhi
+H1: is there bus local train from tirupati to delhi
+H2: is there a local train from tirupati delhi
+H3: is there a local today train from tirupati to delhi
+H4: is there a local train from to tirupati delhi
+H5: is station a local train from tirupati to delhi
+
+SET 137
+REFERENCE: is there a intercity train from warangal to jaipur
+H1: is there a intercity train from warangal to today
+H2: is there a intercity train warangal to jaipur
+H3: is there a intercity train from warangal route to jaipur
+H4: there is a intercity train from warangal to jaipur
+H5: is route a intercity train from warangal to jaipur
+
+SET 138
+REFERENCE: is there a local train from jaipur to salem
+H1: is there a local route from jaipur to salem
+H2: is a local train from jaipur to salem
+H3: is there a local train from train jaipur to salem
+H4: is a there local train from jaipur to salem
+H5: is there a local train from jaipur ticket salem
+
+SET 139
+REFERENCE: which intercity train leaves coimbatore at 18:00
+H1: which intercity train leaves coimbatore fare 18:00
+H2: intercity train leaves coimbatore at 18:00
+H3: today which intercity train leaves coimbatore at 18:00
+H4: intercity which train leaves coimbatore at 18:00
+H5: which intercity station leaves coimbatore at 18:00
+
+SET 140
+REFERENCE: what is the route from salem to nellore
+H1: what is the route from today to nellore
+H2: what is route from salem to nellore
+H3: what is the available route from salem to nellore
+H4: what is the from route salem to nellore
+H5: what is ticket route from salem to nellore
+
+SET 141
+REFERENCE: do i need to change trains for trichy
+H1: do i bus to change trains for trichy
+H2: do i need to change trains trichy
+H3: do i need please to change trains for trichy
+H4: do i need to trains change for trichy
+H5: do i route to change trains for trichy
+
+SET 142
+REFERENCE: what is the route from madurai to coimbatore
+H1: what is the route from madurai to fare
+H2: what is the route from madurai to
+H3: what is the route ticket from madurai to coimbatore
+H4: is what the route from madurai to coimbatore
+H5: what is the route from madurai to fare
+
+SET 143
+REFERENCE: is there a express bus from vijayawada to mumbai
+H1: is there a express bus from vijayawada to ticket
+H2: is a express bus from vijayawada to mumbai
+H3: is there a express bus from vijayawada today to mumbai
+H4: is there a express from bus vijayawada to mumbai
+H5: is there a express bus from fare to mumbai
+
+SET 144
+REFERENCE: is there a train from vellore to warangal
+H1: is there a train from vellore to fare
+H2: is there a from vellore to warangal
+H3: is there a train from vellore route to warangal
+H4: is there a from train vellore to warangal
+H5: is route a train from vellore to warangal
+
+SET 145
+REFERENCE: find a express bus for bengaluru
+H1: find a express platform for bengaluru
+H2: find a bus for bengaluru
+H3: find a express bus today for bengaluru
+H4: find a bus express for bengaluru
+H5: today a express bus for bengaluru
+
+SET 146
+REFERENCE: what are the timings from guntur to bengaluru
+H1: what are the timings train guntur to bengaluru
+H2: are the timings from guntur to bengaluru
+H3: what are the timings from guntur to route bengaluru
+H4: what are timings the from guntur to bengaluru
+H5: what are the platform from guntur to bengaluru
+
+SET 147
+REFERENCE: does this train stop at trichy
+H1: does this route stop at trichy
+H2: does this train stop at
+H3: does available this train stop at trichy
+H4: does this stop train at trichy
+H5: does this train stop at ticket
+
+SET 148
+REFERENCE: how can i travel from bhopal to coimbatore
+H1: how train i travel from bhopal to coimbatore
+H2: how can i travel bhopal to coimbatore
+H3: how can i travel from bhopal to train coimbatore
+H4: how can i travel bhopal from to coimbatore
+H5: how can i travel from ticket to coimbatore
+
+SET 149
+REFERENCE: is there a direct route from warangal to visakhapatnam
+H1: is fare a direct route from warangal to visakhapatnam
+H2: is there a direct route warangal to visakhapatnam
+H3: is there a direct route from bus warangal to visakhapatnam
+H4: is there a route direct from warangal to visakhapatnam
+H5: is there travel direct route from warangal to visakhapatnam
+
+SET 150
+REFERENCE: how can i travel from kochi to tirupati
+H1: how can i travel from travel to tirupati
+H2: how can i travel kochi to tirupati
+H3: how can today i travel from kochi to tirupati
+H4: how can i travel from kochi tirupati to
+H5: how can i travel from kochi to fare
+
+SET 151
+REFERENCE: which train leaves bhopal at 17:30
+H1: which train leaves bhopal at station
+H2: train leaves bhopal at 17:30
+H3: which train leaves train bhopal at 17:30
+H4: which leaves train bhopal at 17:30
+H5: which today leaves bhopal at 17:30
+
+SET 152
+REFERENCE: what is the ticket price from hyderabad to delhi
+H1: what is the ticket price from hyderabad to station
+H2: what the ticket price from hyderabad to delhi
+H3: what is the ticket price from train hyderabad to delhi
+H4: what is the ticket from price hyderabad to delhi
+H5: what is the ticket price from hyderabad to bus
+
+SET 153
+REFERENCE: how can i travel from delhi to madurai
+H1: how can i travel from delhi to station
+H2: how can i travel delhi to madurai
+H3: how can i travel from delhi route to madurai
+H4: how can i travel from to delhi madurai
+H5: how can i travel from bus to madurai
+
+SET 154
+REFERENCE: which route is best from guntur to bhopal
+H1: which route is tomorrow from guntur to bhopal
+H2: route is best from guntur to bhopal
+H3: which route is best from guntur to bhopal today
+H4: which route is best guntur from to bhopal
+H5: which route is bus from guntur to bhopal
+
+SET 155
+REFERENCE: how can i travel from ahmedabad to guntur
+H1: how can i travel from ahmedabad to fare
+H2: how can i travel from ahmedabad guntur
+H3: how bus can i travel from ahmedabad to guntur
+H4: can how i travel from ahmedabad to guntur
+H5: fare can i travel from ahmedabad to guntur
+
+SET 156
+REFERENCE: how can i travel from erode to coimbatore
+H1: how can i travel from erode to bus
+H2: how i travel from erode to coimbatore
+H3: how can i available travel from erode to coimbatore
+H4: how i can travel from erode to coimbatore
+H5: how can i travel from erode tomorrow coimbatore
+
+SET 157
+REFERENCE: book two tickets from kochi to vellore
+H1: book two travel from kochi to vellore
+H2: book two tickets kochi to vellore
+H3: book two please tickets from kochi to vellore
+H4: book two tickets from kochi vellore to
+H5: tomorrow two tickets from kochi to vellore
+
+SET 158
+REFERENCE: i want to book a intercity train from madurai to warangal
+H1: i want to book a intercity train from madurai today warangal
+H2: i want to book intercity train from madurai to warangal
+H3: ticket i want to book a intercity train from madurai to warangal
+H4: i want to book a train intercity from madurai to warangal
+H5: i want to tomorrow a intercity train from madurai to warangal
+
+SET 159
+REFERENCE: which route is best from pondicherry to vellore
+H1: which route is best from pondicherry to route
+H2: which route is best from to vellore
+H3: which ticket route is best from pondicherry to vellore
+H4: which route best is from pondicherry to vellore
+H5: which route is best from train to vellore
+
+SET 160
+REFERENCE: can i travel from vijayawada to mysuru at 18:00
+H1: can i travel from vijayawada to fare at 18:00
+H2: can i travel vijayawada to mysuru at 18:00
+H3: can route i travel from vijayawada to mysuru at 18:00
+H4: can i travel from vijayawada to mysuru 18:00 at
+H5: can route travel from vijayawada to mysuru at 18:00
+
+SET 161
+REFERENCE: how can i travel from bengaluru to madurai
+H1: train can i travel from bengaluru to madurai
+H2: how can i travel from to madurai
+H3: how can i bus travel from bengaluru to madurai
+H4: how can i travel from bengaluru madurai to
+H5: how can i bus from bengaluru to madurai
+
+SET 162
+REFERENCE: show me trains from ahmedabad to nellore
+H1: show me trains from ahmedabad to travel
+H2: show trains from ahmedabad to nellore
+H3: show me trains route from ahmedabad to nellore
+H4: show trains me from ahmedabad to nellore
+H5: show me ticket from ahmedabad to nellore
+
+SET 163
+REFERENCE: book three tickets from pune to coimbatore
+H1: book three tickets from pune to platform
+H2: three tickets from pune to coimbatore
+H3: book three tickets from route pune to coimbatore
+H4: book tickets three from pune to coimbatore
+H5: book travel tickets from pune to coimbatore
+
+SET 164
+REFERENCE: which route is best from delhi to vellore
+H1: which route is best ticket delhi to vellore
+H2: which is best from delhi to vellore
+H3: bus which route is best from delhi to vellore
+H4: route which is best from delhi to vellore
+H5: which route is best from route to vellore
+
+SET 165
+REFERENCE: what time does the metro leave bengaluru
+H1: what time does the station leave bengaluru
+H2: time does the metro leave bengaluru
+H3: what time today does the metro leave bengaluru
+H4: time what does the metro leave bengaluru
+H5: what today does the metro leave bengaluru
+
+SET 166
+REFERENCE: how long is the trip from hyderabad to vellore
+H1: how long is the trip from hyderabad to bus
+H2: how is the trip from hyderabad to vellore
+H3: how long is the trip from hyderabad please to vellore
+H4: how long is the trip hyderabad from to vellore
+H5: how long is the trip from hyderabad to platform
+
+SET 167
+REFERENCE: is there a direct route from madurai to mumbai
+H1: is tomorrow a direct route from madurai to mumbai
+H2: is there a direct route from madurai to
+H3: is there a available direct route from madurai to mumbai
+H4: there is a direct route from madurai to mumbai
+H5: is there a direct route from madurai to fare
+
+SET 168
+REFERENCE: is there a cheaper intercity train to kanchipuram
+H1: is there a cheaper intercity train to train
+H2: there a cheaper intercity train to kanchipuram
+H3: is there a cheaper intercity train to route kanchipuram
+H4: is there a intercity cheaper train to kanchipuram
+H5: is there a cheaper intercity train bus kanchipuram
+
+SET 169
+REFERENCE: what is the ticket price from pondicherry to warangal
+H1: what is the ticket price from pondicherry tomorrow warangal
+H2: what the ticket price from pondicherry to warangal
+H3: what today is the ticket price from pondicherry to warangal
+H4: what is ticket the price from pondicherry to warangal
+H5: what ticket the ticket price from pondicherry to warangal
+
+SET 170
+REFERENCE: i want to travel to pondicherry on wednesday
+H1: i want to travel platform pondicherry on wednesday
+H2: i want to travel to on wednesday
+H3: i want to travel to pondicherry available on wednesday
+H4: i want to travel pondicherry to on wednesday
+H5: i want to travel tomorrow pondicherry on wednesday
+
+SET 171
+REFERENCE: book two tickets from pondicherry to visakhapatnam
+H1: book two tickets from platform to visakhapatnam
+H2: book two tickets pondicherry to visakhapatnam
+H3: book route two tickets from pondicherry to visakhapatnam
+H4: book two tickets from pondicherry visakhapatnam to
+H5: travel two tickets from pondicherry to visakhapatnam
+
+SET 172
+REFERENCE: i want to book a train from pune to bhopal
+H1: i want to today a train from pune to bhopal
+H2: i want to book a train from to bhopal
+H3: i want to please book a train from pune to bhopal
+H4: i want to book a from train pune to bhopal
+H5: i want to book a train from today to bhopal
+
+SET 173
+REFERENCE: is there a night intercity train to jaipur
+H1: is there a night intercity train bus jaipur
+H2: is there a night intercity to jaipur
+H3: is there a night intercity train today to jaipur
+H4: is there a night intercity to train jaipur
+H5: is there a night station train to jaipur
+
+SET 174
+REFERENCE: i need to travel from visakhapatnam to vijayawada
+H1: i need tomorrow travel from visakhapatnam to vijayawada
+H2: i to travel from visakhapatnam to vijayawada
+H3: i route need to travel from visakhapatnam to vijayawada
+H4: need i to travel from visakhapatnam to vijayawada
+H5: i today to travel from visakhapatnam to vijayawada
+
+SET 175
+REFERENCE: what are the timings from vijayawada to warangal
+H1: what station the timings from vijayawada to warangal
+H2: what are timings from vijayawada to warangal
+H3: what are the timings from vijayawada to warangal train
+H4: what are the timings vijayawada from to warangal
+H5: what are the timings from bus to warangal
+
+SET 176
+REFERENCE: which train leaves nellore at 16:00
+H1: which train leaves station at 16:00
+H2: which train leaves nellore at
+H3: which train leaves nellore at 16:00 please
+H4: train which leaves nellore at 16:00
+H5: which train platform nellore at 16:00
+
+SET 177
+REFERENCE: i want to book a intercity train from guntur to mysuru
+H1: i want to book station intercity train from guntur to mysuru
+H2: i to book a intercity train from guntur to mysuru
+H3: i want to book a intercity train from guntur available to mysuru
+H4: i want to a book intercity train from guntur to mysuru
+H5: i want tomorrow book a intercity train from guntur to mysuru
+
+SET 178
+REFERENCE: which route is best from hyderabad to jaipur
+H1: which route is bus from hyderabad to jaipur
+H2: which route is best from to jaipur
+H3: which route is best from hyderabad to jaipur today
+H4: route which is best from hyderabad to jaipur
+H5: which route is best platform hyderabad to jaipur
+
+SET 179
+REFERENCE: show me buses from pune to mysuru
+H1: show today buses from pune to mysuru
+H2: show me buses from pune to
+H3: available show me buses from pune to mysuru
+H4: show me buses from pune mysuru to
+H5: show me buses from pune to fare
+
+SET 180
+REFERENCE: give me the bus schedule from hyderabad
+H1: ticket me the bus schedule from hyderabad
+H2: give me bus schedule from hyderabad
+H3: give me the bus today schedule from hyderabad
+H4: give me bus the schedule from hyderabad
+H5: ticket me the bus schedule from hyderabad
+
+SET 181
+REFERENCE: what are the timings from hyderabad to ahmedabad
+H1: what are platform timings from hyderabad to ahmedabad
+H2: what are the timings from hyderabad ahmedabad
+H3: what bus are the timings from hyderabad to ahmedabad
+H4: what are the timings from to hyderabad ahmedabad
+H5: bus are the timings from hyderabad to ahmedabad
+
+SET 182
+REFERENCE: can i travel from ahmedabad to vellore at 21:30
+H1: can i travel from ahmedabad to vellore at route
+H2: can i travel from ahmedabad to at 21:30
+H3: can i travel from ahmedabad to please vellore at 21:30
+H4: can i travel from ahmedabad vellore to at 21:30
+H5: can i station from ahmedabad to vellore at 21:30
+
+SET 183
+REFERENCE: book two tickets from trichy to warangal
+H1: book two station from trichy to warangal
+H2: book two tickets from trichy to
+H3: book train two tickets from trichy to warangal
+H4: book tickets two from trichy to warangal
+H5: book platform tickets from trichy to warangal
+
+SET 184
+REFERENCE: what is the ticket price from kanchipuram to pune
+H1: bus is the ticket price from kanchipuram to pune
+H2: what is the ticket from kanchipuram to pune
+H3: what is the ticket price from kanchipuram ticket to pune
+H4: what is the ticket price from to kanchipuram pune
+H5: what is the ticket price from kanchipuram platform pune
+
+SET 185
+REFERENCE: can i reserve a seat from bhopal to kochi
+H1: can i reserve a seat from bhopal today kochi
+H2: can i reserve a from bhopal to kochi
+H3: can i reserve route a seat from bhopal to kochi
+H4: can reserve i a seat from bhopal to kochi
+H5: can i reserve a seat today bhopal to kochi
+
+SET 186
+REFERENCE: what is the distance between bengaluru and pune
+H1: what fare the distance between bengaluru and pune
+H2: what is the distance between bengaluru and
+H3: what is the distance between bengaluru and pune ticket
+H4: what is distance the between bengaluru and pune
+H5: route is the distance between bengaluru and pune
+
+SET 187
+REFERENCE: what is the distance between salem and ahmedabad
+H1: what is the distance between salem platform ahmedabad
+H2: is the distance between salem and ahmedabad
+H3: bus what is the distance between salem and ahmedabad
+H4: what is distance the between salem and ahmedabad
+H5: what is the ticket between salem and ahmedabad
+
+SET 188
+REFERENCE: please book a ticket from jaipur to visakhapatnam
+H1: please book a ticket fare jaipur to visakhapatnam
+H2: please book a ticket from to visakhapatnam
+H3: please train book a ticket from jaipur to visakhapatnam
+H4: please book a from ticket jaipur to visakhapatnam
+H5: please book a ticket from jaipur ticket visakhapatnam
+
+SET 189
+REFERENCE: find a intercity train for bengaluru
+H1: find today intercity train for bengaluru
+H2: find a intercity train bengaluru
+H3: find a intercity train for bus bengaluru
+H4: find a intercity train bengaluru for
+H5: find a intercity train station bengaluru
+
+SET 190
+REFERENCE: can i travel from pune to trichy at 12:00
+H1: can today travel from pune to trichy at 12:00
+H2: i travel from pune to trichy at 12:00
+H3: can i travel from pune to train trichy at 12:00
+H4: can i travel from pune to trichy 12:00 at
+H5: can station travel from pune to trichy at 12:00
+
+SET 191
+REFERENCE: which metro leaves mysuru at 10:00
+H1: which metro leaves mysuru today 10:00
+H2: which metro leaves mysuru 10:00
+H3: which metro leaves ticket mysuru at 10:00
+H4: which metro leaves at mysuru 10:00
+H5: which metro bus mysuru at 10:00
+
+SET 192
+REFERENCE: is there a local train from nellore to visakhapatnam
+H1: is there a local train from train to visakhapatnam
+H2: is there a local train nellore to visakhapatnam
+H3: is there route a local train from nellore to visakhapatnam
+H4: is there a local train from nellore visakhapatnam to
+H5: is there a local train bus nellore to visakhapatnam
+
+SET 193
+REFERENCE: how can i travel from erode to kanchipuram
+H1: how can i travel from erode bus kanchipuram
+H2: how can i from erode to kanchipuram
+H3: how can i travel from erode available to kanchipuram
+H4: how can i from travel erode to kanchipuram
+H5: how today i travel from erode to kanchipuram
+
+SET 194
+REFERENCE: how can i travel from salem to kanchipuram
+H1: how can i travel station salem to kanchipuram
+H2: how can i from salem to kanchipuram
+H3: how can i travel from route salem to kanchipuram
+H4: how i can travel from salem to kanchipuram
+H5: how travel i travel from salem to kanchipuram
+
+SET 195
+REFERENCE: can i reserve a seat from tirupati to vellore
+H1: can travel reserve a seat from tirupati to vellore
+H2: can i reserve a seat from tirupati to
+H3: can i reserve route a seat from tirupati to vellore
+H4: can i reserve a seat tirupati from to vellore
+H5: can i reserve a seat ticket tirupati to vellore
+
+SET 196
+REFERENCE: is there a train from coimbatore to ahmedabad
+H1: is there a bus from coimbatore to ahmedabad
+H2: is there train from coimbatore to ahmedabad
+H3: is there a train bus from coimbatore to ahmedabad
+H4: is a there train from coimbatore to ahmedabad
+H5: is there bus train from coimbatore to ahmedabad
+
+SET 197
+REFERENCE: i want to book a intercity train from vellore to ahmedabad
+H1: i want tomorrow book a intercity train from vellore to ahmedabad
+H2: i want to book a intercity train vellore to ahmedabad
+H3: i want to book a intercity train from vellore route to ahmedabad
+H4: i want to book a intercity train from vellore ahmedabad to
+H5: i want to book a intercity train platform vellore to ahmedabad
+
+SET 198
+REFERENCE: i want to book a bus from kanchipuram to jaipur
+H1: i want to book a bus from kanchipuram to station
+H2: i want to book a from kanchipuram to jaipur
+H3: i want please to book a bus from kanchipuram to jaipur
+H4: i to want book a bus from kanchipuram to jaipur
+H5: i want to book a bus from tomorrow to jaipur
+
+SET 199
+REFERENCE: i need to travel from hyderabad to guntur
+H1: i need to travel fare hyderabad to guntur
+H2: need to travel from hyderabad to guntur
+H3: i need to travel from available hyderabad to guntur
+H4: need i to travel from hyderabad to guntur
+H5: i need to travel tomorrow hyderabad to guntur
+
+SET 200
+REFERENCE: how long is the trip from guntur to pondicherry
+H1: how long is the trip from guntur train pondicherry
+H2: long is the trip from guntur to pondicherry
+H3: how long is the trip route from guntur to pondicherry
+H4: how long is the from trip guntur to pondicherry
+H5: how bus is the trip from guntur to pondicherry
+

@@ -1,0 +1,48 @@
+TASK 10 - SYSTEM INTEGRATION AND BENCHMARKING
+======================================================================
+
+DATASET
+----------------------------------------------------------------------
+Training sentences : 16000
+Development sentences : 2000
+Test sentences : 2000
+Vocabulary size : 186
+
+N-GRAM LANGUAGE MODEL
+----------------------------------------------------------------------
+Model: Add-k smoothed trigram language model
+Smoothing: k = 0.1
+Training time: 0.3718 seconds
+Training peak memory: 0.50 MB
+Development perplexity: 5.2985
+Perplexity calculation time: 0.0455 seconds
+Perplexity peak memory: 0.00 MB
+
+RULE-BASED TAGGER
+----------------------------------------------------------------------
+Test accuracy: 100.00%
+Execution time: 0.1031 seconds
+Peak memory: 0.29 MB
+
+HMM VITERBI
+----------------------------------------------------------------------
+Test accuracy: 97.61%
+Execution time: 1.7012 seconds
+
+HAND CALCULATION TEST
+----------------------------------------------------------------------
+Add-k probability formula verified against manual calculation.
+Test status: PASSED
+
+IMPLEMENTATION CONSTRAINTS
+----------------------------------------------------------------------
+NLP implementation uses Python standard library components.
+Matplotlib is used only for required plots.
+No scikit-learn, spaCy, or external NLP toolkit was used.
+
+OUTPUT FILES
+----------------------------------------------------------------------
+results/task10_benchmark.csv
+results/task10_model_performance.png
+results/task10_runtime.png
+results/task10_memory.png

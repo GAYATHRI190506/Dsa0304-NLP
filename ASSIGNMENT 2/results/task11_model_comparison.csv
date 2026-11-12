@@ -1,0 +1,11 @@
+Model,Type,Performance Measure,Score,Runtime,Complexity,Manual Effort,Smoothing
+MLE Bigram,Language Model,Perplexity,6.2825,Not benchmarked,Low,Low,No
+Add-k (k=0.01),Language Model,Perplexity,5.2027,Not benchmarked,Low,Low,Yes
+Good-Turing,Language Model,Perplexity,5.6818,Not benchmarked,Medium,Low,Yes
+Katz Backoff,Language Model,Perplexity,3.5081,Not benchmarked,Medium,Low,Yes
+Stupid Backoff,Language Model,Perplexity,3.1869,Not benchmarked,Low,Low,Yes
+Linear Interpolation,Language Model,Perplexity,3.3953,Not benchmarked,Medium,Low,Yes
+Deleted Interpolation,Language Model,Perplexity,3.5179,Not benchmarked,Medium,Low,Yes
+Rule-Based Tagger,POS Tagger,Accuracy,100.0,0.1031 sec,Low,Medium,N/A
+HMM Viterbi,POS Tagger,Accuracy,97.61,1.7012 sec,Medium,High,N/A
+Brill Tagger,POS Tagger,Accuracy,100.0,5.7100 sec,Medium,Medium,N/A
